@@ -8,10 +8,77 @@ blockquote{border-left:3px solid var(--accent);margin:8px 0;padding:4px 12px;col
 code{background:#f1ede8;padding:1px 4px;border-radius:3px;font-size:13px}p.small{color:var(--ink3);font-size:13px}
 </style></head><body><h1>결과 (자동 생성 — <code>python -m dta.eval.report</code>)</h1>
 <h2>말뭉치</h2>
-<ul><li>대상: 코스피200 110개사 × 사업연도 [np.int64(2024), np.int64(2025)] = 220건</li><li>&#x27;사업의 내용&#x27; 추출 성공: <b>210/220</b> (95%) · 문단 145,121 · 글자 11,813,568</li><li>실패 사유: error:ValueError 5, no_report 5</li></ul>
+<ul><li>대상: 코스피200 201개사 × 사업연도 [2024, 2025] = 402건</li><li>&#x27;사업의 내용&#x27; 추출 성공: <b>399/402</b> (99%) · 문단 271,000 · 글자 21,634,639</li><li>실패 사유: no_report 3</li></ul>
 <h2>C-2 검색 품질 (LLM 없음)</h2>
-<p><i>C-2 미실행</i></p>
+<table><tr><th>임베딩</th><th>검색</th><th>Recall@10</th><th>Recall@30</th><th>지연(s)</th></tr>
+<tr><td>-</td><td>bm25</td><td>63%</td><td>82%</td><td>0.9</td></tr>
+<tr><td>bge-m3</td><td>dense</td><td>49%</td><td>80%</td><td>4.2</td></tr>
+<tr><td>bge-m3</td><td>hybrid</td><td>58%</td><td>85%</td><td>1.4</td></tr>
+<tr><td>kure</td><td>dense</td><td>48%</td><td>80%</td><td>8.3</td></tr>
+<tr><td>kure</td><td>hybrid</td><td>57%</td><td>84%</td><td>3.0</td></tr>
+</table>
+<p>테마 5개 평균. 분모 = 정답 구성종목 중 코스피200에 든 수(합 47). 뺀 수 합 21.</p>
 <h2>C-1 테마 복원</h2>
-<p><i>C-1 미실행</i></p>
+<p><b>bge-m3_hybrid</b></p>
+<table><tr><th>구성</th><th>정밀도</th><th>재현율</th><th>기권률</th><th>기권 적중</th><th>바스켓 크기</th><th>초</th></tr>
+<tr><td>R0 검색만</td><td>39%</td><td>63%</td><td>0%</td><td>—</td><td>15.0</td><td>0</td></tr>
+<tr><td>R1 검색+검증</td><td>42%</td><td>82%</td><td>13%</td><td>88%</td><td>21.0</td><td>15</td></tr>
+<tr><td>R2 단일질의+검증</td><td>77%</td><td>50%</td><td>2%</td><td>0%</td><td>6.0</td><td>2</td></tr>
+</table>
+<p>테마 5개 평균. 정답 합 47, 뺀 수 합 21.</p>
+<p>테마별 재현율:</p>
+<table><tr><th>theme</th><th>R0 검색만</th><th>R1 검색+검증</th><th>R2 단일질의+검증</th></tr>
+<tr><td>2차전지</td><td>0.38</td><td>0.88</td><td>0.88</td></tr>
+<tr><td>방산</td><td>0.75</td><td>0.88</td><td>0.38</td></tr>
+<tr><td>원전</td><td>0.7</td><td>0.6</td><td>0.3</td></tr>
+<tr><td>자동차</td><td>0.42</td><td>0.75</td><td>0.5</td></tr>
+<tr><td>조선·해운</td><td>0.89</td><td>1</td><td>0.44</td></tr>
+</table>
+<p>R1 에서 <b>핵심 판정만</b> 바스켓으로 셌을 때 (관련 제외):</p>
+<table><tr><th>테마</th><th>핵심+관련 P</th><th>R</th><th>핵심만 P</th><th>R</th><th>모름</th><th>모름 적중</th></tr>
+<tr><td>원전</td><td>67%</td><td>60%</td><td>83%</td><td>50%</td><td>2/29</td><td>50%</td></tr>
+<tr><td>조선·해운</td><td>50%</td><td>100%</td><td>88%</td><td>78%</td><td>2/33</td><td>100%</td></tr>
+<tr><td>방산</td><td>47%</td><td>100%</td><td>89%</td><td>100%</td><td>9/54</td><td>100%</td></tr>
+<tr><td>2차전지</td><td>27%</td><td>88%</td><td>43%</td><td>38%</td><td>8/59</td><td>88%</td></tr>
+<tr><td>자동차</td><td>29%</td><td>75%</td><td>58%</td><td>58%</td><td>9/54</td><td>100%</td></tr>
+<tr><td>평균</td><td>44%</td><td>84%</td><td>72%</td><td>65%</td><td></td><td></td></tr>
+</table>
+<p><b>kure_hybrid</b></p>
+<table><tr><th>구성</th><th>정밀도</th><th>재현율</th><th>기권률</th><th>기권 적중</th><th>바스켓 크기</th><th>초</th></tr>
+<tr><td>R0 검색만</td><td>39%</td><td>65%</td><td>0%</td><td>—</td><td>15.0</td><td>0</td></tr>
+<tr><td>R1 검색+검증</td><td>44%</td><td>84%</td><td>12%</td><td>88%</td><td>20.2</td><td>21</td></tr>
+<tr><td>R2 단일질의+검증</td><td>75%</td><td>51%</td><td>2%</td><td>0%</td><td>6.4</td><td>3</td></tr>
+</table>
+<p>테마 5개 평균. 정답 합 47, 뺀 수 합 21.</p>
+<p>테마별 재현율:</p>
+<table><tr><th>theme</th><th>R0 검색만</th><th>R1 검색+검증</th><th>R2 단일질의+검증</th></tr>
+<tr><td>2차전지</td><td>0.62</td><td>0.88</td><td>0.75</td></tr>
+<tr><td>방산</td><td>0.88</td><td>1</td><td>0.38</td></tr>
+<tr><td>원전</td><td>0.7</td><td>0.6</td><td>0.4</td></tr>
+<tr><td>자동차</td><td>0.25</td><td>0.75</td><td>0.58</td></tr>
+<tr><td>조선·해운</td><td>0.78</td><td>1</td><td>0.44</td></tr>
+</table>
+<p>R1 에서 <b>핵심 판정만</b> 바스켓으로 셌을 때 (관련 제외):</p>
+<table><tr><th>테마</th><th>핵심+관련 P</th><th>R</th><th>핵심만 P</th><th>R</th><th>모름</th><th>모름 적중</th></tr>
+<tr><td>원전</td><td>67%</td><td>60%</td><td>83%</td><td>50%</td><td>2/29</td><td>50%</td></tr>
+<tr><td>조선·해운</td><td>50%</td><td>100%</td><td>88%</td><td>78%</td><td>2/33</td><td>100%</td></tr>
+<tr><td>방산</td><td>47%</td><td>100%</td><td>89%</td><td>100%</td><td>9/54</td><td>100%</td></tr>
+<tr><td>2차전지</td><td>27%</td><td>88%</td><td>43%</td><td>38%</td><td>8/59</td><td>88%</td></tr>
+<tr><td>자동차</td><td>29%</td><td>75%</td><td>58%</td><td>58%</td><td>9/54</td><td>100%</td></tr>
+<tr><td>평균</td><td>44%</td><td>84%</td><td>72%</td><td>65%</td><td></td><td></td></tr>
+</table>
 <h2>C-3 도구 설계 실험</h2>
-<p><i>C-3 미실행</i></p><p class='small'>투자 조언이 아니다. 특정 종목이나 매매 시점을 권하지 않으며, 주가에 대한 말을 하지 않는다. 데이터: DART·KRX 공개 자료.</p></body></html>
+<h2>전체</h2>
+<table><tr><th>variant</th><th>n</th><th>accuracy</th><th>tool_calls</th><th>tokens_in</th><th>tokens_out</th><th>seconds</th></tr>
+<tr><td>designed</td><td>100</td><td>1</td><td>2.66</td><td>3740.7</td><td>510.44</td><td>4.463</td></tr>
+<tr><td>raw</td><td>100</td><td>0.95</td><td>2.75</td><td>50547.2</td><td>871.7</td><td>6.98</td></tr>
+</table>
+<h2>유형별 정확도</h2>
+<table><tr><th>variant</th><th>compare</th><th>single_cfs</th><th>single_ofs</th><th>yoy</th></tr>
+<tr><td>designed</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>raw</td><td>1</td><td>0.95</td><td>0.95</td><td>0.9</td></tr>
+</table>
+<h2>실패 유형</h2>
+<table><tr><th>variant</th><th>no_number</th><th>wrong_value</th></tr>
+<tr><td>raw</td><td>4</td><td>1</td></tr>
+</table><p class='small'>투자 조언이 아니다. 특정 종목이나 매매 시점을 권하지 않으며, 주가에 대한 말을 하지 않는다. 데이터: DART·KRX 공개 자료.</p></body></html>

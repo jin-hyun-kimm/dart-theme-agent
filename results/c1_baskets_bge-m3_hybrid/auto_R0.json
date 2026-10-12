@@ -1,0 +1,479 @@
+{
+  "basket": [
+    {
+      "stock_code": "005850",
+      "corp_name": "에스엘",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "012330",
+      "corp_name": "현대모비스",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "018880",
+      "corp_name": "한온시스템",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011210",
+      "corp_name": "현대위아",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "161390",
+      "corp_name": "한국타이어앤테크놀로지",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "073240",
+      "corp_name": "금호타이어",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "298050",
+      "corp_name": "HS효성첨단소재",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "032640",
+      "corp_name": "LG유플러스",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "029780",
+      "corp_name": "삼성카드",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "138930",
+      "corp_name": "BNK금융지주",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "204320",
+      "corp_name": "HL만도",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "007340",
+      "corp_name": "DN오토모티브",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000150",
+      "corp_name": "두산",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010120",
+      "corp_name": "엘에스일렉트릭",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "086280",
+      "corp_name": "현대글로비스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "032830",
+      "corp_name": "삼성생명",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "003230",
+      "corp_name": "삼양식품",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "005830",
+      "corp_name": "DB손해보험",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "055550",
+      "corp_name": "신한지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010060",
+      "corp_name": "OCI홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "047050",
+      "corp_name": "포스코인터내셔널",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "004170",
+      "corp_name": "신세계",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "316140",
+      "corp_name": "우리금융지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "456040",
+      "corp_name": "OCI",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "120110",
+      "corp_name": "코오롱인더",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "105560",
+      "corp_name": "KB금융",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "096770",
+      "corp_name": "SK이노베이션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "005380",
+      "corp_name": "현대자동차",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011070",
+      "corp_name": "LG이노텍",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009150",
+      "corp_name": "삼성전기",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "138040",
+      "corp_name": "메리츠금융지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000270",
+      "corp_name": "기아",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "017800",
+      "corp_name": "현대엘리베이터",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "175330",
+      "corp_name": "JB금융지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "001430",
+      "corp_name": "세아베스틸지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "039490",
+      "corp_name": "키움증권",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034020",
+      "corp_name": "두산에너빌리티",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006260",
+      "corp_name": "LS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "017670",
+      "corp_name": "SK텔레콤",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000990",
+      "corp_name": "DB하이텍",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000240",
+      "corp_name": "한국앤컴퍼니",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "016360",
+      "corp_name": "삼성증권",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "086790",
+      "corp_name": "하나금융지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "139480",
+      "corp_name": "이마트",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "241560",
+      "corp_name": "두산밥캣",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267270",
+      "corp_name": "HD건설기계",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "0126Z0",
+      "corp_name": "삼성에피스홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "064350",
+      "corp_name": "현대로템",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009830",
+      "corp_name": "한화솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    }
+  ],
+  "stages": [
+    {
+      "name": "완성차 제조",
+      "queries": [
+        "완성차 제조",
+        "승용차 생산",
+        "상용차 제조"
+      ]
+    },
+    {
+      "name": "자동차 부품 및 모듈",
+      "queries": [
+        "자동차 부품",
+        "파워트레인",
+        "전장부품",
+        "섀시 모듈"
+      ]
+    },
+    {
+      "name": "타이어 제조",
+      "queries": [
+        "타이어 제조",
+        "자동차용 타이어",
+        "재생 타이어"
+      ]
+    },
+    {
+      "name": "자동차 유통 및 판매",
+      "queries": [
+        "신차 판매",
+        "수입차 유통",
+        "중고차 매매"
+      ]
+    },
+    {
+      "name": "자동차 금융",
+      "queries": [
+        "자동차 할부금융",
+        "오토리스",
+        "자동차 금융 상품"
+      ]
+    }
+  ]
+}

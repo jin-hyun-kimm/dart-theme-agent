@@ -1,0 +1,684 @@
+{
+  "theme_name": "조선·해운",
+  "theme_description": "조선·해운 밸류체인. 선박(컨테이너선·LNG운반선·탱커·특수선) 건조, 선박용 엔진·기자재 제작, 조선 관련 철강·후판, 해상 운송(컨테이너·벌크·탱커 운항) 사업을 하는 기업.\n",
+  "fiscal_year": null,
+  "k_per_query": 20,
+  "top_chunks": 3,
+  "max_candidates": 60,
+  "stages": [
+    {
+      "name": "조선용 철강 및 후판 공급",
+      "queries": [
+        "조선용 후판",
+        "선박용 강재",
+        "후판 압연"
+      ]
+    },
+    {
+      "name": "선박 기자재 및 엔진 제작",
+      "queries": [
+        "선박용 엔진",
+        "선박 기자재",
+        "선박 평형수 처리장치"
+      ]
+    },
+    {
+      "name": "선박 건조 및 조선",
+      "queries": [
+        "LNG운반선 건조",
+        "컨테이너선 건조",
+        "상선 건조"
+      ]
+    },
+    {
+      "name": "해상 운송 및 해운",
+      "queries": [
+        "컨테이너선 운항",
+        "벌크선 운송",
+        "해상 화물 운송"
+      ]
+    }
+  ],
+  "judged": [
+    {
+      "stock_code": "323410",
+      "corp_name": "카카오뱅크",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 은행업의 용도별 대출금에 관한 것으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "004020",
+      "corp_name": "현대제철",
+      "label": "관련",
+      "evidence": "철 강제조업 | 철강 | 봉 형 강 | 건축용, 자동차용,조선용, 모빌리티 부품 | 5,964,924 | 22.7%",
+      "evidence_chunk_id": "20260318001506:0004",
+      "rcept_no": "20260318001506",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "조선용으로 사용되는 봉형강 및 중기 제품 등의 철강 제품을 제조 및 판매하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "001430",
+      "corp_name": "세아베스틸지주",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "특허 출원 목록에 무어링 체인강이 존재하나 실제 사업 영위 여부는 확인되지 않음",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "042660",
+      "corp_name": "한화오션",
+      "label": "핵심",
+      "evidence": "선박 건조 등에 필요한 철판 제품은 포스코, 현대제철 등 국내제철소와 일본 및 중국에서 매입하고 있고 선박 주요 부품인 엔진은 HD현대중공업, 한화엔진 등으로부터 매입하고 있습니다.",
+      "evidence_chunk_id": "20260317000644:0010",
+      "rcept_no": "20260317000644",
+      "section_path": "II. 사업의 내용 > 3. 원재료 및 생산설비",
+      "reason": "선박 건조 사업을 영위하며 철판 및 엔진 등 주요 원재료를 매입하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "핵심",
+      "evidence": "엔진기계사업은 선박의 추진 및 발전기용 엔진을 주요 제품으로 하며, 조선산업과 밀접한 관련이 있습니다.",
+      "evidence_chunk_id": "20250319001012:0353",
+      "rcept_no": "20250319001012",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "주요 종속회사를 통해 선박용 엔진 제작 사업을 영위하고 있음이 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "핵심",
+      "evidence": "엔진기계사업은 선박의 추진 및 발전기용 엔진을 주요 제품으로 하며, 조선산업과 밀접한 관련이 있습니다.",
+      "evidence_chunk_id": "20250318001131:0088",
+      "rcept_no": "20250318001131",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "선박용 엔진을 주요 제품으로 하는 엔진기계사업을 영위하고 있어 조선·해운 테마에 해당합니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "329180",
+      "corp_name": "HD현대중공업",
+      "label": "핵심",
+      "evidence": "엔진기계사업은 선박의 추진 및 발전기용 엔진을 주요 제품으로 하며, 조선산업과 밀접한 관련이 있습니다.",
+      "evidence_chunk_id": "20250318000897:0004",
+      "rcept_no": "20250318000897",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "선박의 추진 및 발전기용 엔진을 주요 제품으로 하는 엔진기계사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "011200",
+      "corp_name": "HMM",
+      "label": "핵심",
+      "evidence": "황산화물 관련해서 국제해사기구(IMO)는 2020년부터 황산화물(SOx) 함유량 기준을 기존 3.5%에서 0.5%로 낮추는 IMO 2020을 시행, 해운사들은 탈황장치(스크러버) 설치 혹은 저유황유 사용 등을 통해 이에 대응하고 있습니다.",
+      "evidence_chunk_id": "20250318000828:0041",
+      "rcept_no": "20250318000828",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "발췌를 통해 당사가 해운사로서 선박 환경 규제에 대응하고 있으며 컨테이너선 등을 발주하는 해상 운송 사업을 영위함을 알 수 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "028670",
+      "corp_name": "팬오션",
+      "label": "관련",
+      "evidence": "Vale, Suzano, (주)포스코, 한국남동발전(주), 한국남부발전(주), 한국동서발전(주), 한국중부발전(주), 현대글로비스(주) 등과 장기화물운송계약을 체결하여 Steaming Coal, Cocking Coal, Iron Ore, Woodpulp 등의 화물을 운송하고 있습니다.",
+      "evidence_chunk_id": "20250318000777:0026",
+      "rcept_no": "20250318000777",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "장기화물운송계약을 통해 석탄, 철광석 등의 화물을 해상 운송하는 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "071970",
+      "corp_name": "HD현대마린엔진",
+      "label": "핵심",
+      "evidence": "당사는 디젤엔진, LNG가스엔진(이중연료), LPG가스엔진(이중연료)을 생산하고 있으며, 글로벌 시장에서 선박용 저속엔진의 주요 메이커로서 자리하고 있습니다.",
+      "evidence_chunk_id": "20260316001327:0000",
+      "rcept_no": "20260316001327",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "선박의 핵심 기기인 선박용 주기엔진 및 엔진부품 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "443060",
+      "corp_name": "HD현대마린솔루션",
+      "label": "관련",
+      "evidence": "이를 위해 기자재 메이커와의 전략적 제휴 또는 M&A, Dry Dock 사업 강화(거점별 대형 수리조선소 협력 확대, 인하우스 서비스센터 설립 등)를 통해 접근성과 실행 역량을 높이고, 엔진·조선·전전 부품부터 사고 수리·선박 개조까지 아우르는 패키지 서비스를 다양화할 예정입니다.",
+      "evidence_chunk_id": "20260316001512:0061",
+      "rcept_no": "20260316001512",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "선박 부품, 기자재, 사고 수리 및 선박 개조 등 조선 관련 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "005490",
+      "corp_name": "POSCO홀딩스",
+      "label": "관련",
+      "evidence": "고강도 STS후판 적용 버퍼탱크 고유모델 개발 및 실증연구",
+      "evidence_chunk_id": "20260311004517:0084",
+      "rcept_no": "20260311004517",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "조선 관련 철강 제품인 고강도 STS후판 적용 기술을 개발하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "086280",
+      "corp_name": "현대글로비스",
+      "label": "핵심",
+      "evidence": "벌크선 사업은 고객과의 신뢰를 바탕으로 국내/외 우량화주사와 장기계약 위주의 사업전략을 추진하고 있습니다.",
+      "evidence_chunk_id": "20260318001205:0003",
+      "rcept_no": "20260318001205",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "벌크선 사업 및 LNG, 가스 운송 등 해상 운송 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 셀레늄 및 아르기닌 연구에 관한 것으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "핵심",
+      "evidence": "선박엔진 | 제조판매 | 선박용 엔진 및 SCR | 선박 주추진기관 | - | 1,212,542 | 88.44",
+      "evidence_chunk_id": "20260318000939:0003",
+      "rcept_no": "20260318000939",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "선박용 엔진 및 SCR 제조판매 사업이 전체 매출의 88.44%를 차지하는 주된 사업이다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "036460",
+      "corp_name": "한국가스공사",
+      "label": "관련",
+      "evidence": "해외 합작법인 KLBV1 S.A(대한해운엘엔지 60%, 가스공사 40%)을 설립하여 유럽 LNG 벙커링 공급에 사용될 LNG벙커링선 1척을 건조완료하여 Shell사에 인도했습니다.",
+      "evidence_chunk_id": "20250325000742:0003",
+      "rcept_no": "20250325000742",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "합작법인을 통해 LNG벙커링선을 건조하여 인도하고 용선계약을 체결한 사실이 확인됩니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "018260",
+      "corp_name": "삼성에스디에스",
+      "label": "관련",
+      "evidence": "전 세계 36개 주요 국가에 위치한 자체 글로벌 거점을 중심으로 수출입 화물의 항공운송, 해상운송, 특송, 다양한 운송 수단을 결합한 복합운송까지 국제 운송 전반의 서비스 제공",
+      "evidence_chunk_id": "20250311001129:0020",
+      "rcept_no": "20250311001129",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "국제운송 서비스의 일환으로 해상운송 서비스를 제공하고 있음이 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "180640",
+      "corp_name": "한진칼",
+      "label": "핵심",
+      "evidence": "해운사업은 1983년 국내 최초로 연안해상운송을 개시한 이래, 업계 최초로 선박 안전경영관리체제인 ISM CODE 인증을 취득하였으며, 전세계를 대상으로 중량물 프로젝트 화물, 방사성폐기물 등과 같은 특수선 전문 선사로 자리 매김하고 있습니다.",
+      "evidence_chunk_id": "20250814004330:0006",
+      "rcept_no": "20250814004330",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "물류 사업부문에서 선박을 이용한 해상 운송서비스 및 특수선 전문 선사 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "112610",
+      "corp_name": "씨에스윈드",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에 따르면 당사는 풍력타워 및 해상풍력 하부구조물 생산사업을 영위하고 있어 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "012330",
+      "corp_name": "현대모비스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 현대모비스의 주요 원재료에 관한 사항으로 조선 및 해운 사업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "014820",
+      "corp_name": "동원시스템즈",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "동원시스템즈는 연포장재, 유리병, PET, 제관 등 포장재 사업을 영위하며 조선·해운과는 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "017960",
+      "corp_name": "한국카본",
+      "label": "핵심",
+      "evidence": "LNG운반선 화물창판넬 | ~ 2025.12.31 | - | - | 3,383,023 | - | 2,241,366 | - | 1,141,657",
+      "evidence_chunk_id": "20260319001272:0024",
+      "rcept_no": "20260319001272",
+      "section_path": "II. 사업의 내용 > 4. 매출 및 수주상황",
+      "reason": "조선 밸류체인에 해당하는 LNG운반선 화물창판넬을 수주하여 납품하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "006040",
+      "corp_name": "동원산업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에 제시된 사업은 포장재 제조 및 운송, 하역 등으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "010140",
+      "corp_name": "삼성중공업",
+      "label": "핵심",
+      "evidence": "조선해양부문은 초대형컨테이너선, LNG선, 원유운반선 등 선박 및 LNG-FPSO, FPU 등 해양플랫폼을 건조, 판매하고 있으며, 토건부문은 건축 및 토목공사,하이테크 공사를 수행하고 있습니다.",
+      "evidence_chunk_id": "20260312001037:0000",
+      "rcept_no": "20260312001037",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "조선해양부문에서 초대형컨테이너선, LNG선, 원유운반선 등 선박을 건조 및 판매하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "001040",
+      "corp_name": "CJ",
+      "label": "관련",
+      "evidence": "해상 포워딩은 컨테이너, 벌크 등 고객사 화물 특성에 맞는 선박을 활용하여 운송하고 통관 등 수출입 절차를 수행하는 사업입니다.",
+      "evidence_chunk_id": "20260318001509:0233",
+      "rcept_no": "20260318001509",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "해상 포워딩 사업을 통해 선박을 활용한 해상 운송 및 수출입 절차 수행을 하고 있음을 언급하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "267270",
+      "corp_name": "HD건설기계",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌에는 기업의 구체적인 사업 내용이 기재되어 있지 않아 판정할 수 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 핵연료 및 원자력 관련 특허 기술에 관한 것으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "000120",
+      "corp_name": "CJ대한통운",
+      "label": "관련",
+      "evidence": "해상 포워딩은 컨테이너, 벌크 등 고객사 화물 특성에 맞는 선박을 활용하여 운송하고 통관 등 수출입 절차를 수행하는 사업입니다.",
+      "evidence_chunk_id": "20260316001417:0048",
+      "rcept_no": "20260316001417",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "컨테이너, 벌크 등 선박을 활용하여 운송하는 해상 포워딩 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "관련",
+      "evidence": "10202204033U | 2025-05-16 | 해상에서 급유 선박이 본선 선박으로 기름을 공급하는 방식에 기반한 선박 급유 영수증 발행 시스템 및 방법과 이의 장치 및 방법",
+      "evidence_chunk_id": "20260318000836:0258",
+      "rcept_no": "20260318000836",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "해상에서 급유 선박이 본선 선박으로 기름을 공급하는 선박 급유 관련 특허를 보유하고 있습니다.",
+      "evidence_verified": true
+    }
+  ],
+  "basket": [
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "핵심",
+      "evidence": "엔진기계사업은 선박의 추진 및 발전기용 엔진을 주요 제품으로 하며, 조선산업과 밀접한 관련이 있습니다.",
+      "evidence_chunk_id": "20250318001131:0088",
+      "rcept_no": "20250318001131",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "선박용 엔진을 주요 제품으로 하는 엔진기계사업을 영위하고 있어 조선·해운 테마에 해당합니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "핵심",
+      "evidence": "엔진기계사업은 선박의 추진 및 발전기용 엔진을 주요 제품으로 하며, 조선산업과 밀접한 관련이 있습니다.",
+      "evidence_chunk_id": "20250319001012:0353",
+      "rcept_no": "20250319001012",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "주요 종속회사를 통해 선박용 엔진 제작 사업을 영위하고 있음이 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "071970",
+      "corp_name": "HD현대마린엔진",
+      "label": "핵심",
+      "evidence": "당사는 디젤엔진, LNG가스엔진(이중연료), LPG가스엔진(이중연료)을 생산하고 있으며, 글로벌 시장에서 선박용 저속엔진의 주요 메이커로서 자리하고 있습니다.",
+      "evidence_chunk_id": "20260316001327:0000",
+      "rcept_no": "20260316001327",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "선박의 핵심 기기인 선박용 주기엔진 및 엔진부품 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "329180",
+      "corp_name": "HD현대중공업",
+      "label": "핵심",
+      "evidence": "엔진기계사업은 선박의 추진 및 발전기용 엔진을 주요 제품으로 하며, 조선산업과 밀접한 관련이 있습니다.",
+      "evidence_chunk_id": "20250318000897:0004",
+      "rcept_no": "20250318000897",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "선박의 추진 및 발전기용 엔진을 주요 제품으로 하는 엔진기계사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "011200",
+      "corp_name": "HMM",
+      "label": "핵심",
+      "evidence": "황산화물 관련해서 국제해사기구(IMO)는 2020년부터 황산화물(SOx) 함유량 기준을 기존 3.5%에서 0.5%로 낮추는 IMO 2020을 시행, 해운사들은 탈황장치(스크러버) 설치 혹은 저유황유 사용 등을 통해 이에 대응하고 있습니다.",
+      "evidence_chunk_id": "20250318000828:0041",
+      "rcept_no": "20250318000828",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "발췌를 통해 당사가 해운사로서 선박 환경 규제에 대응하고 있으며 컨테이너선 등을 발주하는 해상 운송 사업을 영위함을 알 수 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "010140",
+      "corp_name": "삼성중공업",
+      "label": "핵심",
+      "evidence": "조선해양부문은 초대형컨테이너선, LNG선, 원유운반선 등 선박 및 LNG-FPSO, FPU 등 해양플랫폼을 건조, 판매하고 있으며, 토건부문은 건축 및 토목공사,하이테크 공사를 수행하고 있습니다.",
+      "evidence_chunk_id": "20260312001037:0000",
+      "rcept_no": "20260312001037",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "조선해양부문에서 초대형컨테이너선, LNG선, 원유운반선 등 선박을 건조 및 판매하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "017960",
+      "corp_name": "한국카본",
+      "label": "핵심",
+      "evidence": "LNG운반선 화물창판넬 | ~ 2025.12.31 | - | - | 3,383,023 | - | 2,241,366 | - | 1,141,657",
+      "evidence_chunk_id": "20260319001272:0024",
+      "rcept_no": "20260319001272",
+      "section_path": "II. 사업의 내용 > 4. 매출 및 수주상황",
+      "reason": "조선 밸류체인에 해당하는 LNG운반선 화물창판넬을 수주하여 납품하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "180640",
+      "corp_name": "한진칼",
+      "label": "핵심",
+      "evidence": "해운사업은 1983년 국내 최초로 연안해상운송을 개시한 이래, 업계 최초로 선박 안전경영관리체제인 ISM CODE 인증을 취득하였으며, 전세계를 대상으로 중량물 프로젝트 화물, 방사성폐기물 등과 같은 특수선 전문 선사로 자리 매김하고 있습니다.",
+      "evidence_chunk_id": "20250814004330:0006",
+      "rcept_no": "20250814004330",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "물류 사업부문에서 선박을 이용한 해상 운송서비스 및 특수선 전문 선사 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "핵심",
+      "evidence": "선박엔진 | 제조판매 | 선박용 엔진 및 SCR | 선박 주추진기관 | - | 1,212,542 | 88.44",
+      "evidence_chunk_id": "20260318000939:0003",
+      "rcept_no": "20260318000939",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "선박용 엔진 및 SCR 제조판매 사업이 전체 매출의 88.44%를 차지하는 주된 사업이다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "042660",
+      "corp_name": "한화오션",
+      "label": "핵심",
+      "evidence": "선박 건조 등에 필요한 철판 제품은 포스코, 현대제철 등 국내제철소와 일본 및 중국에서 매입하고 있고 선박 주요 부품인 엔진은 HD현대중공업, 한화엔진 등으로부터 매입하고 있습니다.",
+      "evidence_chunk_id": "20260317000644:0010",
+      "rcept_no": "20260317000644",
+      "section_path": "II. 사업의 내용 > 3. 원재료 및 생산설비",
+      "reason": "선박 건조 사업을 영위하며 철판 및 엔진 등 주요 원재료를 매입하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "086280",
+      "corp_name": "현대글로비스",
+      "label": "핵심",
+      "evidence": "벌크선 사업은 고객과의 신뢰를 바탕으로 국내/외 우량화주사와 장기계약 위주의 사업전략을 추진하고 있습니다.",
+      "evidence_chunk_id": "20260318001205:0003",
+      "rcept_no": "20260318001205",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "벌크선 사업 및 LNG, 가스 운송 등 해상 운송 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "001040",
+      "corp_name": "CJ",
+      "label": "관련",
+      "evidence": "해상 포워딩은 컨테이너, 벌크 등 고객사 화물 특성에 맞는 선박을 활용하여 운송하고 통관 등 수출입 절차를 수행하는 사업입니다.",
+      "evidence_chunk_id": "20260318001509:0233",
+      "rcept_no": "20260318001509",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "해상 포워딩 사업을 통해 선박을 활용한 해상 운송 및 수출입 절차 수행을 하고 있음을 언급하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "000120",
+      "corp_name": "CJ대한통운",
+      "label": "관련",
+      "evidence": "해상 포워딩은 컨테이너, 벌크 등 고객사 화물 특성에 맞는 선박을 활용하여 운송하고 통관 등 수출입 절차를 수행하는 사업입니다.",
+      "evidence_chunk_id": "20260316001417:0048",
+      "rcept_no": "20260316001417",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "컨테이너, 벌크 등 선박을 활용하여 운송하는 해상 포워딩 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "관련",
+      "evidence": "10202204033U | 2025-05-16 | 해상에서 급유 선박이 본선 선박으로 기름을 공급하는 방식에 기반한 선박 급유 영수증 발행 시스템 및 방법과 이의 장치 및 방법",
+      "evidence_chunk_id": "20260318000836:0258",
+      "rcept_no": "20260318000836",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "해상에서 급유 선박이 본선 선박으로 기름을 공급하는 선박 급유 관련 특허를 보유하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "443060",
+      "corp_name": "HD현대마린솔루션",
+      "label": "관련",
+      "evidence": "이를 위해 기자재 메이커와의 전략적 제휴 또는 M&A, Dry Dock 사업 강화(거점별 대형 수리조선소 협력 확대, 인하우스 서비스센터 설립 등)를 통해 접근성과 실행 역량을 높이고, 엔진·조선·전전 부품부터 사고 수리·선박 개조까지 아우르는 패키지 서비스를 다양화할 예정입니다.",
+      "evidence_chunk_id": "20260316001512:0061",
+      "rcept_no": "20260316001512",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "선박 부품, 기자재, 사고 수리 및 선박 개조 등 조선 관련 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "005490",
+      "corp_name": "POSCO홀딩스",
+      "label": "관련",
+      "evidence": "고강도 STS후판 적용 버퍼탱크 고유모델 개발 및 실증연구",
+      "evidence_chunk_id": "20260311004517:0084",
+      "rcept_no": "20260311004517",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "조선 관련 철강 제품인 고강도 STS후판 적용 기술을 개발하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "018260",
+      "corp_name": "삼성에스디에스",
+      "label": "관련",
+      "evidence": "전 세계 36개 주요 국가에 위치한 자체 글로벌 거점을 중심으로 수출입 화물의 항공운송, 해상운송, 특송, 다양한 운송 수단을 결합한 복합운송까지 국제 운송 전반의 서비스 제공",
+      "evidence_chunk_id": "20250311001129:0020",
+      "rcept_no": "20250311001129",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "국제운송 서비스의 일환으로 해상운송 서비스를 제공하고 있음이 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "028670",
+      "corp_name": "팬오션",
+      "label": "관련",
+      "evidence": "Vale, Suzano, (주)포스코, 한국남동발전(주), 한국남부발전(주), 한국동서발전(주), 한국중부발전(주), 현대글로비스(주) 등과 장기화물운송계약을 체결하여 Steaming Coal, Cocking Coal, Iron Ore, Woodpulp 등의 화물을 운송하고 있습니다.",
+      "evidence_chunk_id": "20250318000777:0026",
+      "rcept_no": "20250318000777",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "장기화물운송계약을 통해 석탄, 철광석 등의 화물을 해상 운송하는 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "036460",
+      "corp_name": "한국가스공사",
+      "label": "관련",
+      "evidence": "해외 합작법인 KLBV1 S.A(대한해운엘엔지 60%, 가스공사 40%)을 설립하여 유럽 LNG 벙커링 공급에 사용될 LNG벙커링선 1척을 건조완료하여 Shell사에 인도했습니다.",
+      "evidence_chunk_id": "20250325000742:0003",
+      "rcept_no": "20250325000742",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "합작법인을 통해 LNG벙커링선을 건조하여 인도하고 용선계약을 체결한 사실이 확인됩니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "004020",
+      "corp_name": "현대제철",
+      "label": "관련",
+      "evidence": "철 강제조업 | 철강 | 봉 형 강 | 건축용, 자동차용,조선용, 모빌리티 부품 | 5,964,924 | 22.7%",
+      "evidence_chunk_id": "20260318001506:0004",
+      "rcept_no": "20260318001506",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "조선용으로 사용되는 봉형강 및 중기 제품 등의 철강 제품을 제조 및 판매하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "267270",
+      "corp_name": "HD건설기계",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌에는 기업의 구체적인 사업 내용이 기재되어 있지 않아 판정할 수 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "001430",
+      "corp_name": "세아베스틸지주",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "특허 출원 목록에 무어링 체인강이 존재하나 실제 사업 영위 여부는 확인되지 않음",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 셀레늄 및 아르기닌 연구에 관한 것으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "006040",
+      "corp_name": "동원산업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에 제시된 사업은 포장재 제조 및 운송, 하역 등으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "014820",
+      "corp_name": "동원시스템즈",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "동원시스템즈는 연포장재, 유리병, PET, 제관 등 포장재 사업을 영위하며 조선·해운과는 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "112610",
+      "corp_name": "씨에스윈드",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에 따르면 당사는 풍력타워 및 해상풍력 하부구조물 생산사업을 영위하고 있어 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "323410",
+      "corp_name": "카카오뱅크",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 은행업의 용도별 대출금에 관한 것으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 핵연료 및 원자력 관련 특허 기술에 관한 것으로 조선·해운 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "012330",
+      "corp_name": "현대모비스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 현대모비스의 주요 원재료에 관한 사항으로 조선 및 해운 사업과 무관합니다.",
+      "evidence_verified": false
+    }
+  ]
+}

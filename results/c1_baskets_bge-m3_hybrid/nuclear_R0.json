@@ -1,0 +1,270 @@
+{
+  "basket": [
+    {
+      "stock_code": "052690",
+      "corp_name": "한전기술",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034020",
+      "corp_name": "두산에너빌리티",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "051600",
+      "corp_name": "한전KPS",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000150",
+      "corp_name": "두산",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "062040",
+      "corp_name": "산일전기",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000720",
+      "corp_name": "현대건설",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "047040",
+      "corp_name": "대우건설",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "071320",
+      "corp_name": "지역난방공사",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267270",
+      "corp_name": "HD건설기계",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010130",
+      "corp_name": "고려아연",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009830",
+      "corp_name": "한화솔루션",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010140",
+      "corp_name": "삼성중공업",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "329180",
+      "corp_name": "HD현대중공업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "036460",
+      "corp_name": "한국가스공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "272210",
+      "corp_name": "한화시스템",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "017960",
+      "corp_name": "한국카본",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "028050",
+      "corp_name": "삼성E&A",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006040",
+      "corp_name": "동원산업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "014820",
+      "corp_name": "동원시스템즈",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "105560",
+      "corp_name": "KB금융",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "051910",
+      "corp_name": "LG화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "373220",
+      "corp_name": "LG에너지솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    }
+  ],
+  "stages": [
+    {
+      "name": "원전 설계 및 엔지니어링",
+      "queries": [
+        "원자력 발전소 설계",
+        "종합설계용역",
+        "원자로 계통설계"
+      ]
+    },
+    {
+      "name": "원전 주기기 및 보조기기 제작",
+      "queries": [
+        "원자로 제작",
+        "증기발생기",
+        "원자력 발전 기자재"
+      ]
+    },
+    {
+      "name": "원전 건설 및 시공",
+      "queries": [
+        "원자력 발전소 건설",
+        "원전 시공",
+        "원전 배관 설치"
+      ]
+    },
+    {
+      "name": "핵연료 및 원자재 공급",
+      "queries": [
+        "핵연료 제조",
+        "우라늄 정광",
+        "원자력 연료"
+      ]
+    },
+    {
+      "name": "원전 운영, 정비 및 계측제어",
+      "queries": [
+        "원전 정비",
+        "원자력 발전소 운전",
+        "계측제어시스템"
+      ]
+    },
+    {
+      "name": "차세대 원전 및 SMR",
+      "queries": [
+        "소형모듈원자로",
+        "SMR 개발",
+        "차세대 원자로"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "basket": [
+    {
+      "stock_code": "066970",
+      "corp_name": "엘앤에프",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "005420",
+      "corp_name": "코스모화학",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010130",
+      "corp_name": "고려아연",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "185750",
+      "corp_name": "종근당",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "051910",
+      "corp_name": "LG화학",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "361610",
+      "corp_name": "SK아이이테크놀로지",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "241560",
+      "corp_name": "두산밥캣",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000080",
+      "corp_name": "하이트진로",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006400",
+      "corp_name": "삼성SDI",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006040",
+      "corp_name": "동원산업",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "161890",
+      "corp_name": "한국콜마",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000270",
+      "corp_name": "기아",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010060",
+      "corp_name": "OCI홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "096770",
+      "corp_name": "SK이노베이션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "373220",
+      "corp_name": "LG에너지솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "042700",
+      "corp_name": "한미반도체",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "002380",
+      "corp_name": "케이씨씨",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "014820",
+      "corp_name": "동원시스템즈",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "002790",
+      "corp_name": "아모레퍼시픽홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "005490",
+      "corp_name": "POSCO홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "450080",
+      "corp_name": "에코프로머티",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "457190",
+      "corp_name": "이수스페셜티케미컬",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009830",
+      "corp_name": "한화솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "090430",
+      "corp_name": "아모레퍼시픽",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "003670",
+      "corp_name": "포스코퓨처엠",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "004990",
+      "corp_name": "롯데지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "069260",
+      "corp_name": "티케이지휴켐스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267260",
+      "corp_name": "HD현대일렉트릭",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000880",
+      "corp_name": "한화",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011170",
+      "corp_name": "롯데케미칼",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "456040",
+      "corp_name": "OCI",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011790",
+      "corp_name": "SKC",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034020",
+      "corp_name": "두산에너빌리티",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "051600",
+      "corp_name": "한전KPS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006260",
+      "corp_name": "LS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011210",
+      "corp_name": "현대위아",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "055550",
+      "corp_name": "신한지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "280360",
+      "corp_name": "롯데웰푸드",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000660",
+      "corp_name": "SK하이닉스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "007340",
+      "corp_name": "DN오토모티브",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "093370",
+      "corp_name": "후성",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "005940",
+      "corp_name": "NH투자증권",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "071320",
+      "corp_name": "지역난방공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "007660",
+      "corp_name": "이수페타시스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "007310",
+      "corp_name": "오뚜기",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "298050",
+      "corp_name": "HS효성첨단소재",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "086790",
+      "corp_name": "하나금융지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "001680",
+      "corp_name": "대상",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "003550",
+      "corp_name": "LG",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "039490",
+      "corp_name": "키움증권",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "086280",
+      "corp_name": "현대글로비스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "402340",
+      "corp_name": "SK스퀘어",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "012450",
+      "corp_name": "한화에어로스페이스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "022100",
+      "corp_name": "포스코DX",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000150",
+      "corp_name": "두산",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    }
+  ],
+  "stages": [
+    {
+      "name": "원소재 및 전구체 가공",
+      "queries": [
+        "리튬 가공",
+        "전구체 제조",
+        "수산화리튬",
+        "니켈 코발트 망간"
+      ]
+    },
+    {
+      "name": "핵심 소재 생산",
+      "queries": [
+        "양극재 제조",
+        "음극재 생산",
+        "이차전지 분리막",
+        "전해액 공급"
+      ]
+    },
+    {
+      "name": "배터리 제조 장비",
+      "queries": [
+        "이차전지 전극공정",
+        "조립공정 장비",
+        "활성화공정 설비",
+        "롤투롤 장비"
+      ]
+    },
+    {
+      "name": "배터리 셀 및 팩 제조",
+      "queries": [
+        "리튬이온 배터리 셀",
+        "배터리 팩 조립",
+        "에너지저장장치 ESS",
+        "원통형 배터리"
+      ]
+    },
+    {
+      "name": "폐배터리 재활용",
+      "queries": [
+        "폐배터리 리사이클링",
+        "블랙파우더",
+        "금속 회수",
+        "사용후 배터리"
+      ]
+    }
+  ]
+}

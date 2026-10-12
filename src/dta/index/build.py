@@ -15,6 +15,16 @@ from dta.index.store import VectorStore
 
 CHUNKS_PATH = INDEX_DIR / "chunks.jsonl"
 BM25_PATH = INDEX_DIR / "bm25.pkl"
+# 설계 D15(2026-10-12 실측 뒤 추가): '3. 원재료 및 생산설비'·'5. 위험관리 및 파생거래' 의 표 행은 숫자뿐이라 색인에서 뺀다.
+# 문단(p)은 모든 소절에서 넣는다. 되돌리기: 이 튜플을 비우고 build_chunks(force=True).
+SKIP_TABLE_SUBSECTIONS = ("3.", "5.")
+
+
+def _keep(p) -> bool:
+    if p.kind != "table_row":
+        return True
+    sub = p.section_path.split(" > ")[-1].strip()
+    return not sub.startswith(SKIP_TABLE_SUBSECTIONS)
 
 
 def build_chunks(force: bool = False) -> list[Chunk]:
@@ -23,7 +33,7 @@ def build_chunks(force: bool = False) -> list[Chunk]:
     man = load_manifest()
     chunks: list[Chunk] = []
     for r in man[man["status"] == "ok"].itertuples():
-        paras = load_paragraphs(str(r.rcept_no))
+        paras = [p for p in load_paragraphs(str(r.rcept_no)) if _keep(p)]
         chunks.extend(
             chunk_paragraphs(
                 paras,

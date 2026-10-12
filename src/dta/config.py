@@ -19,7 +19,7 @@ load_dotenv(ROOT / ".env")
 
 # --- 범위 (설계 D1·D6) ---
 UNIVERSE_INDEX_CODE = "1028"  # KRX 지수 코드: 코스피200
-UNIVERSE_DATE = "20261010"  # 구성종목 기준일 (마지막 거래일)
+UNIVERSE_DATE = "20261008"  # 구성종목 기준일 = 마지막 거래일 (10-09 한글날, 10-10 토)
 FISCAL_YEARS = (2024, 2025)  # 사업연도. 사업보고서는 이듬해 3월 제출
 REPORT_SECTION_TITLE = "사업의 내용"  # 설계 D2
 

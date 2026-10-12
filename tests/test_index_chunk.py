@@ -51,3 +51,12 @@ def test_long_single_paragraph_is_split():
         max_len=900,
     )
     assert len(chunks) >= 3 and all(len(c.text) <= 900 + 100 + 1 for c in chunks)
+
+
+def test_numeric_table_subsections_are_skipped():
+    from dta.index.build import _keep
+
+    assert _keep(_p("II. 사업의 내용 > 2. 주요 제품 및 서비스", "a | b", 0, kind="table_row"))
+    assert not _keep(_p("II. 사업의 내용 > 3. 원재료 및 생산설비", "a | b", 0, kind="table_row"))
+    assert not _keep(_p("II. 사업의 내용 > 5. 위험관리 및 파생거래", "a | b", 0, kind="table_row"))
+    assert _keep(_p("II. 사업의 내용 > 3. 원재료 및 생산설비", "문단은 남긴다", 0))

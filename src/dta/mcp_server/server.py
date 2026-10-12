@@ -60,7 +60,7 @@ def get_prices(stock_code: str, start: str, end: str) -> dict:
 
 
 @mcp.tool()
-def get_etf_holdings(etf_ticker: str, date: str = "20261010") -> dict:
+def get_etf_holdings(etf_ticker: str, date: str = "20261008") -> dict:
     """ETF 구성종목과 비중(%). 날짜 YYYYMMDD."""
     return T.get_etf_holdings(etf_ticker, date)
 

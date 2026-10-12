@@ -1,10 +1,40 @@
-# 평가용 테마 (설계 D6·D8). D1 에서 ETF 후보 10개의 코스피200 포함률을 재고 5개를 확정한다.
-# description 에는 ETF 이름과 운용사 공개 설명문만 쓴다. 구성종목은 절대 적지 않는다(정답 누설, 테스트가 막는다).
-date: "20261010"
-themes: []
-#  - id: nuclear
-#    name: 원전
-#    etf_ticker: "000000"
-#    etf_name: "..."
-#    description: >
-#      ...
+# 평가용 테마 (설계 D6·D8). 2026-10-12 D1 에서 ETF 후보 147개의 코스피200 포함률(results/d1_etf_candidates.csv)을 재고 확정.
+# description 은 테마를 설명하는 말일 뿐, 구성종목(정답)은 절대 적지 않는다 — tests/test_themes_no_leak.py 가 막는다.
+# 정답 분모 = 구성종목 ∩ 코스피200 (뺀 수는 n_excluded 로 표에 같이 적는다, 설계 D7)
+date: "20261008"
+themes:
+  - id: nuclear
+    name: 원전
+    etf_ticker: "434730"
+    etf_name: HANARO 원자력iSelect
+    description: >
+      원자력 발전 밸류체인. 원자로·증기발생기 등 원전 주기기와 보조기기 제작, 원전 설계·시공·정비,
+      핵연료 공급, 원전 계측제어·전력기기, 소형모듈원자로(SMR) 개발 등 원자력 발전과 직접 관련된 사업을 하는 기업.
+  - id: shipbuilding
+    name: 조선·해운
+    etf_ticker: "441540"
+    etf_name: HANARO Fn조선해운
+    description: >
+      조선·해운 밸류체인. 선박(컨테이너선·LNG운반선·탱커·특수선) 건조, 선박용 엔진·기자재 제작,
+      조선 관련 철강·후판, 해상 운송(컨테이너·벌크·탱커 운항) 사업을 하는 기업.
+  - id: defense
+    name: 방산
+    etf_ticker: "490480"
+    etf_name: SOL K방산
+    description: >
+      방위산업. 항공기·엔진, 유도무기·미사일, 전차·자주포·장갑차, 함정, 레이더·통신·전자전 장비,
+      탄약·화약 등 군수 장비와 무기체계를 개발·생산하거나 방산 수출을 하는 기업.
+  - id: battery
+    name: 2차전지
+    etf_ticker: "364980"
+    etf_name: TIGER 2차전지TOP10
+    description: >
+      2차전지(리튬이온 배터리) 밸류체인. 전기차·ESS용 배터리 셀 제조, 양극재·음극재·분리막·전해액 등 소재,
+      전구체·리튬 가공, 배터리 장비 사업을 하는 기업.
+  - id: auto
+    name: 자동차
+    etf_ticker: "466930"
+    etf_name: SOL 자동차TOP3플러스
+    description: >
+      자동차 밸류체인. 완성차 제조, 자동차 부품(파워트레인·전장·섀시·내외장)·모듈 공급,
+      타이어, 자동차 판매·할부금융 등 완성차 생산과 직접 이어진 사업을 하는 기업.

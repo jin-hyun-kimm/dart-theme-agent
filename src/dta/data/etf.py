@@ -21,10 +21,19 @@ def list_etfs(date: str) -> pd.DataFrame:
     if path.exists():
         return pd.read_csv(path, dtype={"ticker": str})
     tickers = stock.get_etf_ticker_list(date)
-    rows = [{"ticker": t, "name": stock.get_etf_ticker_name(t)} for t in tickers]
+    rows = [{"ticker": t, "name": _etf_name(t)} for t in tickers]
     df = pd.DataFrame(rows)
+    df = df[df["name"].astype(str).str.len() > 0]
     df.to_csv(path, index=False)
     return df
+
+
+def _etf_name(ticker: str) -> str:
+    """pykrx 버전에 따라 str 또는 Series 를 돌려준다 → 항상 str."""
+    n = stock.get_etf_ticker_name(ticker)
+    if hasattr(n, "iloc"):
+        n = str(n.iloc[0]) if len(n) else ""
+    return str(n or "").strip()
 
 
 def is_theme_candidate(name: str) -> bool:

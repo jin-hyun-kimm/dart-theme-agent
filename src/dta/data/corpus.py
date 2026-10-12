@@ -89,13 +89,26 @@ def build_corpus(
                 refs = client.annual_reports(corp_code, fy)
                 if not refs:
                     raise ParseFailure("no_report", f"{name} {fy}")
-                try:
-                    ref, path = client.fetch_first_available(refs)
-                except ValueError as e:
-                    raise ParseFailure("no_document_file", str(e)[:80]) from e
-                row["rcept_no"], row["rcept_dt"], row["corp_name"] = ref.rcept_no, ref.rcept_dt, ref.corp_name
-                paras = extract_section(path.read_text(encoding="utf-8"))
-                _save_paragraphs(ref.rcept_no, paras)
+                # 후보를 늦은 순으로 시도한다. [첨부정정]은 원문 파일이 없고(014), [기재정정]은 정정신고서만 있어
+                # '사업의 내용'이 없을 수 있다 → 둘 다 다음 후보(원본 사업보고서)로 폴백. 마지막 실패 사유를 남긴다.
+                last: ParseFailure | None = None
+                paras = None
+                for ref in refs:
+                    try:
+                        path = client.fetch_document_xml(ref.rcept_no)
+                    except ValueError as e:
+                        last = ParseFailure("no_document_file", str(e)[:80])
+                        continue
+                    try:
+                        paras = extract_section(path.read_text(encoding="utf-8"))
+                    except ParseFailure as e:
+                        last = e
+                        continue
+                    row["rcept_no"], row["rcept_dt"], row["corp_name"] = ref.rcept_no, ref.rcept_dt, ref.corp_name
+                    break
+                if paras is None:
+                    raise last or ParseFailure("no_report", f"{name} {fy}")
+                _save_paragraphs(row["rcept_no"], paras)
                 row.update(status="ok", n_paras=len(paras), n_chars=sum(len(p.text) for p in paras))
             except ParseFailure as e:
                 row["reason"] = e.reason

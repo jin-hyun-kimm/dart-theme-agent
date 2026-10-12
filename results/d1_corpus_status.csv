@@ -1,5 +1,3 @@
 status,reason,n,share
-ok,,387,0.963
-fail,error:ValueError,7,0.017
-fail,no_report,6,0.015
-fail,no_title,2,0.005
+ok,,399,0.993
+fail,no_report,3,0.007

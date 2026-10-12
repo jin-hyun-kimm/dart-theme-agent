@@ -28,7 +28,9 @@ def basket_metrics(
     }
 
 
-def recall_at_k(company_ranking: list[str], gold_in_universe: set[str], ks: tuple[int, ...] = (10, 30)) -> dict:
+def recall_at_k(
+    company_ranking: list[str], gold_in_universe: set[str], ks: tuple[int, ...] = (10, 30)
+) -> dict:
     out = {"n_gold": len(gold_in_universe)}
     for k in ks:
         top = set(company_ranking[:k])

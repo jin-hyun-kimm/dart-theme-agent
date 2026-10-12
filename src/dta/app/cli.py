@@ -1,9 +1,9 @@
 """CLI. 실행: PYTHONPATH=src .venv/bin/python -m dta.app.cli <명령>
 
-  theme "원전" --desc "원자력 발전 밸류체인 ..."   테마 바스켓 생성(확정 전 묻는다)
-  corpus                                         사업보고서 수집·파싱 (D1)
-  index [kure bge-m3]                            색인 (D2)
-  mcp [--http]                                   MCP 서버 실행
+theme "원전" --desc "원자력 발전 밸류체인 ..."   테마 바스켓 생성(확정 전 묻는다)
+corpus                                         사업보고서 수집·파싱 (D1)
+index [kure bge-m3]                            색인 (D2)
+mcp [--http]                                   MCP 서버 실행
 """
 
 from __future__ import annotations
@@ -47,7 +47,9 @@ def cmd_theme(a: argparse.Namespace) -> int:
     out = graph.invoke(state, cfg)
     snap = graph.get_state(cfg).values
     basket = snap.get("basket", [])
-    print(f"\n테마 「{a.name}」 · 후보 {len(snap.get('candidates', []))} · 판정 {len(basket)} · {time.time() - t0:.0f}s")
+    print(
+        f"\n테마 「{a.name}」 · 후보 {len(snap.get('candidates', []))} · 판정 {len(basket)} · {time.time() - t0:.0f}s"
+    )
     print("밸류체인 단계:", " / ".join(s["name"] for s in snap.get("stages", [])))
     _print_basket(basket)
     if "__interrupt__" in out:
@@ -57,7 +59,10 @@ def cmd_theme(a: argparse.Namespace) -> int:
     out_dir = Path(a.out or (RESULTS_DIR / "baskets"))
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"{a.name}_{time.strftime('%Y%m%d_%H%M%S')}.json"
-    path.write_text(json.dumps({k: v for k, v in snap.items() if k != "candidates"}, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(
+        json.dumps({k: v for k, v in snap.items() if k != "candidates"}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     print(f"저장: {path}")
     return 0
 
@@ -65,7 +70,9 @@ def cmd_theme(a: argparse.Namespace) -> int:
 def cmd_corpus(_a: argparse.Namespace) -> int:
     import runpy
 
-    runpy.run_path(str(Path(__file__).resolve().parents[3] / "scripts" / "build_corpus.py"), run_name="__main__")
+    runpy.run_path(
+        str(Path(__file__).resolve().parents[3] / "scripts" / "build_corpus.py"), run_name="__main__"
+    )
     return 0
 
 
@@ -77,7 +84,9 @@ def cmd_mcp(a: argparse.Namespace) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(prog="dta", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p = argparse.ArgumentParser(
+        prog="dta", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     sub = p.add_subparsers(dest="cmd", required=True)
     t = sub.add_parser("theme")
     t.add_argument("name")

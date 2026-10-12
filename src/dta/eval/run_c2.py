@@ -29,14 +29,18 @@ def theme_queries(theme_id: str, description: str) -> list[str]:
     return qs
 
 
-def company_ranking(searcher: Searcher, queries: list[str], k: int = 60, fiscal_year: int | None = None) -> list[str]:
+def company_ranking(
+    searcher: Searcher, queries: list[str], k: int = 60, fiscal_year: int | None = None
+) -> list[str]:
     hits = []
     for q in queries:
         hits.extend(searcher.search(q, k=k, fiscal_year=fiscal_year))
     return [c.stock_code for c in aggregate_by_company(hits, top_chunks=1)]
 
 
-def main(embedders=("kure", "bge-m3"), modes=("dense", "hybrid"), fiscal_year: int | None = None) -> pd.DataFrame:
+def main(
+    embedders=("kure", "bge-m3"), modes=("dense", "hybrid"), fiscal_year: int | None = None
+) -> pd.DataFrame:
     date, themes = load_themes()
     golds = {t.id: build_gold(t, date) for t in themes}
     rows = []
@@ -47,8 +51,16 @@ def main(embedders=("kure", "bge-m3"), modes=("dense", "hybrid"), fiscal_year: i
                 t0 = time.time()
                 ranking = company_ranking(s, theme_queries(t.id, t.description), fiscal_year=fiscal_year)
                 m = recall_at_k(ranking, set(golds[t.id].in_universe))
-                rows.append({"embedder": emb, "mode": mode, "theme": t.name, "n_excluded": golds[t.id].n_excluded,
-                             "latency_s": round(time.time() - t0, 2), **m})
+                rows.append(
+                    {
+                        "embedder": emb,
+                        "mode": mode,
+                        "theme": t.name,
+                        "n_excluded": golds[t.id].n_excluded,
+                        "latency_s": round(time.time() - t0, 2),
+                        **m,
+                    }
+                )
                 print(rows[-1], flush=True)
     df = pd.DataFrame(rows)
     out = RESULTS_DIR / "c2_retrieval.csv"

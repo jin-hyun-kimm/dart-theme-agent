@@ -29,14 +29,27 @@ class CompanyHit:
 
 
 class Searcher:
-    def __init__(self, embedder_name: str = "kure", mode: str = "hybrid") -> None:
+    def __init__(
+        self,
+        embedder_name: str = "kure",
+        mode: str = "hybrid",
+        *,
+        chunks: list[Chunk] | None = None,
+        embedder=None,
+        store: VectorStore | None = None,
+        bm25: BM25Index | None = None,
+    ) -> None:
+        """기본은 디스크의 색인을 읽는다. 테스트는 chunks·embedder·store·bm25 를 주입한다."""
         if mode not in ("dense", "hybrid", "bm25"):
             raise ValueError(mode)
         self.mode = mode
-        self.embedder = Embedder(embedder_name)
-        self.store = VectorStore(embedder_name)
-        self.chunks = {c.chunk_id: c for c in load_chunks()}
-        self.bm25 = BM25Index.load(BM25_PATH) if mode in ("hybrid", "bm25") else None
+        self.embedder = embedder if embedder is not None else Embedder(embedder_name)
+        self.store = store if store is not None else VectorStore(embedder_name)
+        self.chunks = {c.chunk_id: c for c in (chunks if chunks is not None else load_chunks())}
+        if mode in ("hybrid", "bm25"):
+            self.bm25 = bm25 if bm25 is not None else BM25Index.load(BM25_PATH)
+        else:
+            self.bm25 = None
 
     def search(self, query: str, k: int = 20, fiscal_year: int | None = None) -> list[Hit]:
         over = k * 3 if fiscal_year else k * 2

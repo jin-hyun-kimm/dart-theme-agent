@@ -12,9 +12,13 @@ DART 원문은 XML 이지만 사용자 정의 엔티티·불완전 태그가 섞
 from __future__ import annotations
 
 import re
+import warnings
 from dataclasses import dataclass
 
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, Tag, XMLParsedAsHTMLWarning
+
+# DART 원문은 XML 이지만 사용자 정의 엔티티 때문에 일부러 html.parser 로 읽는다 (모듈 머리 설명). 경고는 의도된 것.
+warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 TOP_SECTION_RE = re.compile(r"^\s*[IVXⅠ-Ⅹ]+\s*\.")  # "II. 사업의 내용" 같은 최상위 제목
 _WS_RE = re.compile(r"\s+")

@@ -11,3 +11,5 @@ data/cache/
 data/index/
 models/
 *.zip
+# OpenDartReader 가 cwd 에 만드는 고유번호 캐시
+docs_cache/

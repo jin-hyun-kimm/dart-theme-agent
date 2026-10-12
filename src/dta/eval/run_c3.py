@@ -36,6 +36,15 @@ SYSTEM = (
 )
 
 
+def _text(content) -> str:
+    """Gemini 는 content 를 블록 목록으로 줄 수 있다 → 텍스트만 잇는다."""
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        return " ".join(b.get("text", "") if isinstance(b, dict) else str(b) for b in content)
+    return str(content)
+
+
 def _usage(messages) -> tuple[int, int, int]:
     """(입력 토큰, 출력 토큰, 도구 호출 수)"""
     tin = tout = calls = 0
@@ -73,7 +82,7 @@ async def run_variant(variant: str, questions, max_steps: int = 8) -> list[dict]
                         {"messages": [{"role": "user", "content": q.text}]}, config={"recursion_limit": 2 * max_steps + 1}
                     )
                     msgs = res["messages"]
-                    answer = msgs[-1].content if isinstance(msgs[-1].content, str) else json.dumps(msgs[-1].content, ensure_ascii=False)
+                    answer = _text(msgs[-1].content)
                     err = ""
                 except Exception as e:  # noqa: BLE001 — 실패도 한 행이다
                     msgs, answer, err = [], "", f"{type(e).__name__}: {str(e)[:120]}"

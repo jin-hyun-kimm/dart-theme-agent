@@ -86,11 +86,14 @@ def build_corpus(
             try:
                 if not corp_code:
                     raise ParseFailure("no_corp_code", stock_code)
-                ref = client.annual_report(corp_code, fy)
-                if ref is None:
+                refs = client.annual_reports(corp_code, fy)
+                if not refs:
                     raise ParseFailure("no_report", f"{name} {fy}")
+                try:
+                    ref, path = client.fetch_first_available(refs)
+                except ValueError as e:
+                    raise ParseFailure("no_document_file", str(e)[:80]) from e
                 row["rcept_no"], row["rcept_dt"], row["corp_name"] = ref.rcept_no, ref.rcept_dt, ref.corp_name
-                path = client.fetch_document_xml(ref.rcept_no)
                 paras = extract_section(path.read_text(encoding="utf-8"))
                 _save_paragraphs(ref.rcept_no, paras)
                 row.update(status="ok", n_paras=len(paras), n_chars=sum(len(p.text) for p in paras))

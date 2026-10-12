@@ -7,6 +7,8 @@ def test_extract_compound_korean_units():
     assert extract_amounts_won("매출액은 1조 2,345억원입니다") == [1.2345e12]
     assert extract_amounts_won("영업이익 6,566억 원") == [6.566e11]
     assert extract_amounts_won("약 123,456,789,000원") == [123456789000.0]
+    # 괄호 되풀이는 합산하지 않는다 (2026-10-12 C-3 스모크에서 발견)
+    assert extract_amounts_won("매출액은 3조 3,931억원(33,931억원)입니다") == [3.3931e12, 3.3931e12]
 
 
 def test_grade_unit_error_classified():

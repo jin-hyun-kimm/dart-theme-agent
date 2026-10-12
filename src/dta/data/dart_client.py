@@ -57,30 +57,48 @@ class DartClient:
         return str(hit.iloc[0]["corp_code"])
 
     # --- 사업보고서 선택 ---
-    def annual_report(self, corp_code: str, fiscal_year: int) -> AnnualReportRef | None:
-        """사업연도 fiscal_year 의 사업보고서 중 **가장 늦게 접수된 것**(정정 포함)을 고른다."""
+    def annual_reports(self, corp_code: str, fiscal_year: int) -> list[AnnualReportRef]:
+        """사업연도 fiscal_year 의 사업보고서 후보를 **늦게 접수된 순**으로 돌려준다(정정 포함).
+
+        [첨부정정]·[첨부추가] 접수번호에는 원문 파일이 없을 수 있다(DART status 014) → 호출측이 다음 후보로 폴백한다.
+        """
         start = f"{fiscal_year + 1}-01-01"
         end = f"{fiscal_year + 1}-12-31"
-        lst = self.dart.list(corp_code, start=start, end=end, kind="A", final=True)
+        lst = self.dart.list(corp_code, start=start, end=end, kind="A", final=False)
         time.sleep(_SLEEP_SEC)
         if lst is None or len(lst) == 0:
-            return None
+            return []
         lst = lst.astype(str)
         tag = f"({fiscal_year}.12)"
         mask = lst["report_nm"].str.contains("사업보고서") & lst["report_nm"].str.contains(tag, regex=False)
-        cand = lst[mask]
-        if cand.empty:
-            return None
-        row = cand.sort_values("rcept_dt").iloc[-1]
-        return AnnualReportRef(
-            corp_code=str(row["corp_code"]),
-            stock_code=str(row.get("stock_code", "")),
-            corp_name=str(row["corp_name"]),
-            fiscal_year=fiscal_year,
-            rcept_no=str(row["rcept_no"]),
-            rcept_dt=str(row["rcept_dt"]),
-            report_nm=str(row["report_nm"]),
-        )
+        cand = lst[mask].sort_values("rcept_dt", ascending=False)
+        return [
+            AnnualReportRef(
+                corp_code=str(row["corp_code"]),
+                stock_code=str(row.get("stock_code", "")),
+                corp_name=str(row["corp_name"]),
+                fiscal_year=fiscal_year,
+                rcept_no=str(row["rcept_no"]),
+                rcept_dt=str(row["rcept_dt"]),
+                report_nm=str(row["report_nm"]),
+            )
+            for _, row in cand.iterrows()
+        ]
+
+    def annual_report(self, corp_code: str, fiscal_year: int) -> AnnualReportRef | None:
+        refs = self.annual_reports(corp_code, fiscal_year)
+        return refs[0] if refs else None
+
+    def fetch_first_available(self, refs: list[AnnualReportRef]) -> tuple[AnnualReportRef, Path]:
+        """원문이 실제로 있는 첫 후보를 받는다. 전부 실패하면 마지막 오류를 올린다."""
+        last: Exception | None = None
+        for ref in refs:
+            try:
+                return ref, self.fetch_document_xml(ref.rcept_no)
+            except ValueError as e:  # OpenDartReader: {'status': '014', 'message': '파일이 존재하지 않습니다.'}
+                last = e
+                continue
+        raise last or RuntimeError("후보 없음")
 
     # --- 원문 ---
     def document_xml_path(self, rcept_no: str) -> Path:

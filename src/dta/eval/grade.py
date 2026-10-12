@@ -13,26 +13,31 @@ def extract_amounts_won(text: str) -> list[float]:
     vals: list[float] = []
     pending = 0.0
     had = False
+    last_mag = float("inf")  # 복합 표기는 큰 단위 → 작은 단위 순. 순서가 깨지면(괄호 되풀이 등) 새 값으로 본다
     for m in _NUM.finditer(text):
         num = float(m.group(1).replace(",", ""))
         unit = m.group(2)
         if unit in ("조", "억", "천만", "백만", "만"):
+            if had and UNIT[unit] >= last_mag:
+                vals.append(pending)
+                pending = 0.0
             pending += num * UNIT[unit]
+            last_mag = UNIT[unit]
             had = True
         elif unit == "원":
             if had:
                 vals.append(pending + (num if num < 1e4 else 0.0))
             else:
                 vals.append(num)
-            pending, had = 0.0, False
+            pending, had, last_mag = 0.0, False, float("inf")
         elif unit == "%":
             if had:
                 vals.append(pending)
-                pending, had = 0.0, False
+                pending, had, last_mag = 0.0, False, float("inf")
         else:
             if had:
                 vals.append(pending)
-                pending, had = 0.0, False
+                pending, had, last_mag = 0.0, False, float("inf")
             elif num >= 1e6:
                 vals.append(num)  # 단위 없는 큰 숫자는 원으로 간주
     if had:

@@ -25,7 +25,7 @@ from dta.graph.nodes import make_retrieve
 from dta.index.search import get_searcher
 
 STAGES_DIR = RESULTS_DIR / "stages"
-BASKETS_DIR = RESULTS_DIR / "c1_baskets"
+BASKETS_DIR = RESULTS_DIR / "c1_baskets"  # 기본(KURE hybrid). 다른 구성은 --baskets-dir 로 분리
 R0_TOP_N = 15  # 검색만 구성의 바스켓 크기 (정답 평균 크기 ~9.4 의 1.5배)
 MAX_CONCURRENCY = 8  # 검증 노드 병렬 LLM 호출 상한 (Vertex 한도·504 보호)
 
@@ -129,7 +129,10 @@ def main() -> None:
     ap.add_argument("--k", type=int, default=20)
     ap.add_argument("--top-chunks", type=int, default=3)
     ap.add_argument("--themes", default="")
+    ap.add_argument("--baskets-dir", default="c1_baskets")
     a = ap.parse_args()
+    global BASKETS_DIR
+    BASKETS_DIR = RESULTS_DIR / a.baskets_dir
     date, themes = load_themes()
     if a.themes:
         want = set(a.themes.split(","))

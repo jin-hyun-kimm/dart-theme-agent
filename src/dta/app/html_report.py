@@ -73,7 +73,7 @@ def main() -> None:
     page = (
         "<!doctype html><html lang='ko'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
         f"<title>근거 — 결과</title><style>{CSS}</style></head><body>{body}"
-        "<p class='small'>투자 조언이 아니다. 종목·시점 추천, 목표가, 수익률 예측을 하지 않는다. 데이터: DART·KRX 공개 자료.</p></body></html>"
+        "<p class='small'>투자 조언이 아니다. 특정 종목이나 매매 시점을 권하지 않으며, 주가에 대한 말을 하지 않는다. 데이터: DART·KRX 공개 자료.</p></body></html>"
     )
     out = RESULTS_DIR / "index.html"
     out.write_text(page, encoding="utf-8")

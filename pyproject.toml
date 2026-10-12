@@ -1,0 +1,28 @@
+[project]
+name = "dart-theme-agent"
+version = "0.1.0"
+description = "근거 — 사업보고서 원문에서 근거 문장을 찾아 테마 소속을 가리고, 실제 테마 ETF 구성종목으로 채점되는 LangGraph 에이전트 + 한국 금융 데이터 MCP 서버"
+requires-python = ">=3.12"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

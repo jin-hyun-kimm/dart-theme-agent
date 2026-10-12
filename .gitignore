@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.DS_Store
+# 원본·캐시·색인은 커밋하지 않는다 (재생성 스크립트 제공)
+data/raw/
+data/cache/
+data/index/
+models/
+*.zip

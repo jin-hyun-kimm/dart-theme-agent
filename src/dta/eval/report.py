@@ -58,8 +58,37 @@ def c1_table() -> str:
         rows.append(f"\n테마 {df['theme'].nunique()}개 평균. 정답 합 {int(df.groupby('theme')['n_gold'].first().sum())}, 뺀 수 합 {int(df.groupby('theme')['n_excluded'].first().sum())}.")
         per = df.pivot_table(index="theme", columns="config", values="recall").round(2)
         rows.append("\n테마별 재현율:\n\n" + per.to_markdown())
+        core = _core_only_table()
+        if core:
+            rows.append("\nR1 에서 **핵심 판정만** 바스켓으로 셌을 때 (관련 제외):\n\n" + core)
         out.append("\n".join(rows))
     return "\n\n".join(out)
+
+
+def _core_only_table() -> str:
+    import json
+
+    from dta.eval.gold import build_gold
+    from dta.eval.metrics import basket_metrics
+    from dta.eval.themes import load_themes
+
+    date, themes = load_themes()
+    lines = ["| 테마 | 핵심+관련 P | R | 핵심만 P | R | 모름 | 모름 적중 |", "|---|---|---|---|---|---|---|"]
+    acc = []
+    for t in themes:
+        p = RESULTS_DIR / "c1_baskets" / f"{t.id}_R1.json"
+        if not p.exists():
+            continue
+        gold = set(build_gold(t, date).in_universe)
+        basket = json.loads(p.read_text(encoding="utf-8"))["basket"]
+        a, c = basket_metrics(basket, gold), basket_metrics(basket, gold, include_labels=("핵심",))
+        acc.append((a, c))
+        lines.append(f"| {t.name} | {_pct(a['precision'])} | {_pct(a['recall'])} | {_pct(c['precision'])} | {_pct(c['recall'])} | {a['n_unknown']}/{a['n_candidates']} | {_pct(a['abstain_correct'])} |")
+    if not acc:
+        return ""
+    n = len(acc)
+    lines.append(f"| 평균 | {_pct(sum(a['precision'] for a, _ in acc) / n)} | {_pct(sum(a['recall'] for a, _ in acc) / n)} | {_pct(sum(c['precision'] for _, c in acc) / n)} | {_pct(sum(c['recall'] for _, c in acc) / n)} | | |")
+    return "\n".join(lines)
 
 
 def c3_table() -> str:

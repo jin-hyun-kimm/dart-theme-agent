@@ -6,6 +6,7 @@ import re
 
 _NUM = re.compile(r"(-?\d[\d,]*\.?\d*)\s*(조|억|백만|천만|만|원|%)?")
 UNIT = {"조": 1e12, "억": 1e8, "천만": 1e7, "백만": 1e6, "만": 1e4, "원": 1.0}
+_DECREASE = re.compile(r"^\s*(감소|하락|줄|축소|역성장|적자)")  # "29.6% 감소" → -29.6
 
 
 def extract_amounts_won(text: str) -> list[float]:
@@ -13,6 +14,7 @@ def extract_amounts_won(text: str) -> list[float]:
     vals: list[float] = []
     pending = 0.0
     had = False
+    sign = 1.0  # "-2조 3,210억원": 첫 부분의 부호가 복합 표기 전체에 걸린다
     last_mag = float("inf")  # 복합 표기는 큰 단위 → 작은 단위 순. 순서가 깨지면(괄호 되풀이 등) 새 값으로 본다
     for m in _NUM.finditer(text):
         num = float(m.group(1).replace(",", ""))
@@ -21,7 +23,10 @@ def extract_amounts_won(text: str) -> list[float]:
             if had and UNIT[unit] >= last_mag:
                 vals.append(pending)
                 pending = 0.0
-            pending += num * UNIT[unit]
+                sign = 1.0
+            if not had:
+                sign = -1.0 if num < 0 else 1.0
+            pending += abs(num) * UNIT[unit] * sign
             last_mag = UNIT[unit]
             had = True
         elif unit == "원":
@@ -46,7 +51,17 @@ def extract_amounts_won(text: str) -> list[float]:
 
 
 def extract_pcts(text: str) -> list[float]:
-    return [float(m.group(1).replace(",", "")) for m in _NUM.finditer(text) if m.group(2) == "%"]
+    """'29.6% 감소' 처럼 뒤따르는 낱말이 방향을 말하면 부호에 반영한다."""
+    out = []
+    for m in _NUM.finditer(text):
+        if m.group(2) != "%":
+            continue
+        v = float(m.group(1).replace(",", ""))
+        tail = text[m.end() : m.end() + 6]
+        if v > 0 and _DECREASE.match(tail):
+            v = -v
+        out.append(v)
+    return out
 
 
 def grade(q, answer: str) -> dict:

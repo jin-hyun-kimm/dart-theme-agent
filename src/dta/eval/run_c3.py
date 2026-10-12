@@ -112,11 +112,23 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--variants", default="raw,designed")
     ap.add_argument("--limit", type=int, default=100)
+    ap.add_argument("--regrade", action="store_true", help="저장된 답변을 다시 채점만 한다 (에이전트 호출 없음)")
     a = ap.parse_args()
     questions = load_questions()[: a.limit]
     rows: list[dict] = []
-    for v in a.variants.split(","):
-        rows.extend(asyncio.run(run_variant(v, questions)))
+    if a.regrade:
+        qs = {q.qid: q for q in questions}
+        for v in a.variants.split(","):
+            p = RESULTS_DIR / f"c3_answers_{v}.jsonl"
+            for line in p.read_text(encoding="utf-8").splitlines():
+                d = json.loads(line)
+                g = grade(qs[d["qid"]], d["answer"])
+                d.update(correct=bool(g["correct"]), fail_type=None if g["correct"] else g["fail_type"], got=str(g["got"])[:80])
+                rows.append(d)
+            p.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows if r["variant"] == v), encoding="utf-8")
+    else:
+        for v in a.variants.split(","):
+            rows.extend(asyncio.run(run_variant(v, questions)))
     df = pd.DataFrame(rows)
     df.to_csv(RESULTS_DIR / "c3_tool_design.csv", index=False)
     s = summarize(rows)

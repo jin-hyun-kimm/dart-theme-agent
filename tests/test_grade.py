@@ -24,3 +24,12 @@ def test_grade_pct_and_name():
     assert grade(qp, "전년 대비 12.4% 증가")["correct"]
     qn = SimpleNamespace(gold_kind="name", gold_won=0, tolerance=0, gold_name="삼성전자")
     assert grade(qn, "삼성전자가 더 큽니다")["correct"]
+
+
+def test_negative_compound_and_decrease_words():
+    # 2026-10-12 C-3 실패 검토에서 찾은 채점기 결함 2건
+    assert extract_amounts_won("영업이익은 -2조 3,210억원(영업손실 2조 3,210억원)입니다")[0] == -2.321e12
+    from dta.eval.grade import extract_pcts
+
+    assert extract_pcts("468억원 대비 29.6% 감소하였습니다") == [-29.6]
+    assert extract_pcts("전년 대비 4.5% 증가") == [4.5]

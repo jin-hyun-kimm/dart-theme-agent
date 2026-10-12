@@ -1,0 +1,478 @@
+{
+  "basket": [
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "064350",
+      "corp_name": "현대로템",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "012450",
+      "corp_name": "한화에어로스페이스",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000880",
+      "corp_name": "한화",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "272210",
+      "corp_name": "한화시스템",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011210",
+      "corp_name": "현대위아",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "079550",
+      "corp_name": "LIG디펜스앤에어로스페이스",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000150",
+      "corp_name": "두산",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "047810",
+      "corp_name": "한국항공우주",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "042660",
+      "corp_name": "한화오션",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "003090",
+      "corp_name": "대웅",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "103140",
+      "corp_name": "풍산",
+      "label": "핵심",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "003490",
+      "corp_name": "대한항공",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "017670",
+      "corp_name": "SK텔레콤",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "204320",
+      "corp_name": "HL만도",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "042700",
+      "corp_name": "한미반도체",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "002380",
+      "corp_name": "케이씨씨",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "034020",
+      "corp_name": "두산에너빌리티",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "068270",
+      "corp_name": "셀트리온",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "009420",
+      "corp_name": "한올바이오파마",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "285130",
+      "corp_name": "SK케미칼",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000080",
+      "corp_name": "하이트진로",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "105560",
+      "corp_name": "KB금융",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "241560",
+      "corp_name": "두산밥캣",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "008730",
+      "corp_name": "율촌화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000240",
+      "corp_name": "한국앤컴퍼니",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "028670",
+      "corp_name": "팬오션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "307950",
+      "corp_name": "현대오토에버",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "012330",
+      "corp_name": "현대모비스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "329180",
+      "corp_name": "HD현대중공업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "012750",
+      "corp_name": "에스원",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "024110",
+      "corp_name": "기업은행",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "139480",
+      "corp_name": "이마트",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "028260",
+      "corp_name": "삼성물산",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "300720",
+      "corp_name": "한일시멘트",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "001800",
+      "corp_name": "오리온홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "005380",
+      "corp_name": "현대자동차",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "069620",
+      "corp_name": "대웅제약",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011200",
+      "corp_name": "HMM",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "0126Z0",
+      "corp_name": "삼성에피스홀딩스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "138040",
+      "corp_name": "메리츠금융지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "267270",
+      "corp_name": "HD건설기계",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "000100",
+      "corp_name": "유한양행",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "443060",
+      "corp_name": "HD현대마린솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011790",
+      "corp_name": "SKC",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "001430",
+      "corp_name": "세아베스틸지주",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "010120",
+      "corp_name": "엘에스일렉트릭",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "450080",
+      "corp_name": "에코프로머티",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    },
+    {
+      "stock_code": "011070",
+      "corp_name": "LG이노텍",
+      "label": "무관",
+      "evidence": "",
+      "evidence_verified": false,
+      "reason": "검색 순위"
+    }
+  ],
+  "stages": [
+    {
+      "name": "체계종합 및 설계",
+      "queries": [
+        "체계종합",
+        "무기체계 연구개발",
+        "국방 R&D"
+      ]
+    },
+    {
+      "name": "기동 및 화력체계",
+      "queries": [
+        "자주포",
+        "전차",
+        "장갑차"
+      ]
+    },
+    {
+      "name": "항공 및 함정체계",
+      "queries": [
+        "전투기",
+        "군함 건조",
+        "잠수함"
+      ]
+    },
+    {
+      "name": "유도무기 및 탄약",
+      "queries": [
+        "유도무기",
+        "탄약",
+        "정밀타격"
+      ]
+    },
+    {
+      "name": "방산 전자 및 지휘통제",
+      "queries": [
+        "군용 레이더",
+        "전자전 장비",
+        "지휘통제체계"
+      ]
+    }
+  ]
+}

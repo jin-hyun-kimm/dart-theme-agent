@@ -1,0 +1,700 @@
+{
+  "theme_name": "원전",
+  "theme_description": "원자력 발전 밸류체인. 원자로·증기발생기 등 원전 주기기와 보조기기 제작, 원전 설계·시공·정비, 핵연료 공급, 원전 계측제어·전력기기, 소형모듈원자로(SMR) 개발 등 원자력 발전과 직접 관련된 사업을 하는 기업.\n",
+  "fiscal_year": null,
+  "k_per_query": 20,
+  "top_chunks": 3,
+  "max_candidates": 60,
+  "stages": [
+    {
+      "name": "원전 설계 및 엔지니어링",
+      "queries": [
+        "원자력 발전소 설계",
+        "종합설계용역",
+        "원자로 계통설계"
+      ]
+    },
+    {
+      "name": "원전 주기기 및 보조기기 제작",
+      "queries": [
+        "원자로 제작",
+        "증기발생기",
+        "원자력 발전 기자재"
+      ]
+    },
+    {
+      "name": "원전 건설 및 시공",
+      "queries": [
+        "원자력 발전소 건설",
+        "원전 시공",
+        "원전 배관 설치"
+      ]
+    },
+    {
+      "name": "핵연료 및 원자재 공급",
+      "queries": [
+        "핵연료 제조",
+        "우라늄 정광",
+        "원자력 연료"
+      ]
+    },
+    {
+      "name": "원전 운영, 정비 및 계측제어",
+      "queries": [
+        "원전 정비",
+        "원자력 발전소 운전",
+        "계측제어시스템"
+      ]
+    },
+    {
+      "name": "차세대 원전 및 SMR",
+      "queries": [
+        "소형모듈원자로",
+        "SMR 개발",
+        "차세대 원자로"
+      ]
+    }
+  ],
+  "judged": [
+    {
+      "stock_code": "052690",
+      "corp_name": "한전기술",
+      "label": "핵심",
+      "evidence": "회사는 한빛 3,4호기 원자력발전소 설계를 시작으로 다수호기의 원자력발전소 설계업무를 독자적으로 수행하는 과정에서 1,000MW급 원자력발전소 설계를 한국형으로 표준화하였고, 이후 국제 경쟁력을 보유한 1,400MW급 신형 경수로 설계기술(APR1400)을 개발함으로써 원전의 안전성과 경제성을 제고하여 왔습니다.",
+      "evidence_chunk_id": "20260326001003:0065",
+      "rcept_no": "20260326001003",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "원자력발전소 종합설계 및 원자로 계통설계, SMR 노형 개발 등을 주요 사업으로 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "핵심",
+      "evidence": "원자로 부문에서는 원자력발전소 1차계통 설계기술을 기반으로 국내 신규원전 건설사업(새울3,4호기, 신한울3,4호기)의 원자로계통설계 용역을 무결점으로 수행하고 있으며, 국내 가동원전의 안전성 증진 및 효율성 개선을 위한 설계개선 용역들의 수행을 통해 발전소 운영사인 한국수력원자력의 안전한 원전 운영의 임무를 지원하고 있습니다.",
+      "evidence_chunk_id": "20260317000686:0029",
+      "rcept_no": "20260317000686",
+      "section_path": "II. 사업의 내용 > 4. 매출 및 수주상황",
+      "reason": "원자력발전소 설계 및 원자로계통설계 용역, SMR 설계 기술 개발 등을 수행하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "034020",
+      "corp_name": "두산에너빌리티",
+      "label": "핵심",
+      "evidence": "사업별로 살펴보면, 우수한 주조 및 단조 설비와 기술 역량을 바탕으로 원전의 핵심 설비인 원자로, 증기발생기, 냉각펌프를 비롯해 핵연료 취급 설비, 핵연료 운반 용기(Cask), 원자로 계통 보조기기 등 대부분의 주요 설비와 국내외 복합화력발전소에 가스 터빈, 스팀 터빈 등 핵심 주기기를 제작·공급하고 있습니다.",
+      "evidence_chunk_id": "20260320001246:0000",
+      "rcept_no": "20260320001246",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "원전의 핵심 설비인 원자로, 증기발생기, 냉각펌프 및 보조기기 등을 제작·공급하는 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "051600",
+      "corp_name": "한전KPS",
+      "label": "핵심",
+      "evidence": "제어봉집합체 안내관 지지핀 교체, 원자로 관통관 정비 및 원자로 Baffle Former Bolt 등 원자로 용기 및 내장품검사, 제어봉, 원전연료에 대한 정밀진단 및 안전성 평가 등",
+      "evidence_chunk_id": "20250514000974:0019",
+      "rcept_no": "20250514000974",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "원자로 정비, 원자로 냉각재펌프 정비, 증기발생기 정비 등 원전 정비 및 검사 사업을 주요 업무로 수행하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "000720",
+      "corp_name": "현대건설",
+      "label": "관련",
+      "evidence": "현대건설은 세계 최고의 원전 기술력을 보유하고 있으며, 국내외 대형원전 24기에 시공 주간사로 참여하며 100% 시공 기술 자립을 달성하였습니다.",
+      "evidence_chunk_id": "20260318001395:0095",
+      "rcept_no": "20260318001395",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "국내외 대형원전 시공 주간사 참여 및 SMR 기술개발 등 원전 사업을 영위하고 있으나 주된 사업인지 여부는 불분명합니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "036460",
+      "corp_name": "한국가스공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 천연가스 공급설비, LNG 저장탱크, 배관시설 등 가스 관련 사업만 다룹니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "047040",
+      "corp_name": "대우건설",
+      "label": "핵심",
+      "evidence": "원자력 분야의 경우, 당사는 원자력 생애 전 주기 수행 실적을 보유한 국내 유일 기업으로서 국내시장에서는 대형원전, 연구용 원자로, 방사성폐기물 처분시설 및 핵연료 생산시설 등 원자력 전 분야에서 다수의 독보적인 수행 실적을 보유하고 있으며, 원자력 사업 전담 조직의 확대 운영을 통해 수주 및 수행 경쟁력을 한층 강화하였습니다.",
+      "evidence_chunk_id": "20260318001029:0008",
+      "rcept_no": "20260318001029",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "대형원전, 핵연료, SMR 등 원자력 전 분야에서 독보적인 수행 실적을 보유하고 사업을 추진 중입니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "062040",
+      "corp_name": "산일전기",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 변압기 및 전기설비 관련 특허 목록만 나열되어 있어 원전 관련 사업 여부를 판단할 수 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "000150",
+      "corp_name": "두산",
+      "label": "핵심",
+      "evidence": "당사는 1987년 한빛 3,4호기부터 국내 유일의 원자로 핵심설비 주계약자로 참여하여 왔습니다.",
+      "evidence_chunk_id": "20250814002379:0169",
+      "rcept_no": "20250814002379",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "두산에너빌리티는 국내 유일의 원자로 핵심설비 주계약자로 원전 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "010130",
+      "corp_name": "고려아연",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 이차전지 소재, 광산개발, 제련 부산물 회수 등만 언급되어 있습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "071320",
+      "corp_name": "지역난방공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 지역난방용 축열조, 이중보온관, 냉난방기 등 지역난방 관련 기술만 다루고 있습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 산업단지 대상 증기 판매 및 한국전력거래소를 통한 전력 판매에 관한 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌문에는 원자력 발전과 관련된 사업이나 연구개발 내용이 포함되어 있지 않습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 생화학 및 헤모글로빈 측정시스템 등 의료 기기 관련 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "009830",
+      "corp_name": "한화솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 태양전지 및 태양광 관련 기술에 관한 것으로 원자력 발전과는 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "010140",
+      "corp_name": "삼성중공업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 선박 건조, 친환경 연료공급 시스템 등 조선업 관련 연구개발 활동만 기술하고 있습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "329180",
+      "corp_name": "HD현대중공업",
+      "label": "관련",
+      "evidence": "최근에는 에너지 전환 흐름에 발맞추어 정부 및 민간 발전사업자가 추진하는 해상풍력발전 등 신재생에너지사업 뿐만 아니라 소형모듈원자로(SMR)와 같은 차세대 원전사업에도 참여하며 사업 포트폴리오를 확장해 나가고 있습니다.",
+      "evidence_chunk_id": "20260320000859:0003",
+      "rcept_no": "20260320000859",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "소형모듈원자로(SMR)와 같은 차세대 원전사업에 참여하고 있다고 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌에는 연료전지 및 AI 기술 개발만 언급되어 있으며 원전 관련 사업 내용은 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "관련",
+      "evidence": "당사는 중속엔진을 활용한 원자력 발전소 비상발전기를 제작 및 공급하고 있으며, 원전 비상발전기는 원전의 안전성 및 신뢰성 확보에 필요한 핵심 주요기기로서 발전소 외부전원 상실사고(Loss of Off Site Power : LOSP) 시 또는 원자로 냉각제 상실사고(Loss-of-Coolant Accident : LOCA)와 외부전원 상실사고가 동시에 발생하더라도 원자로를 안전하게 정지시키는 데 필요한 비상 전력을 공급하는 기기입니다.",
+      "evidence_chunk_id": "20260318000939:0043",
+      "rcept_no": "20260318000939",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "원자력 발전소 비상발전기를 제작 및 공급하고 있으나 주된 사업인지 여부는 알 수 없습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "006400",
+      "corp_name": "삼성SDI",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 리튬이온 2차 전지 및 전자재료 사업만 명시되어 있어 원전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "051910",
+      "corp_name": "LG화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 이차전지, 양극재, ESS 등 배터리 관련 연구개발 활동에 관한 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "047050",
+      "corp_name": "포스코인터내셔널",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 에너지 사업이라고만 명시되어 있어 원전 관련 사업 여부를 확인할 수 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "005420",
+      "corp_name": "코스모화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 이차전지 양극활물질 원료인 황산코발트, 황산니켈, 탄산리튬 및 이산화티타늄 사업에 관한 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "204320",
+      "corp_name": "HL만도",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 자율주행 및 차량용 레이더 등 자동차 부품 관련 연구개발 실적으로 원전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 해상 변전소, 선박 엔진, 수전해 시스템 등 조선 및 친환경 선박 기술 개발에 관한 내용으로 원전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "373220",
+      "corp_name": "LG에너지솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 이차전지 및 배터리 개발에 관한 것으로 원자력 발전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "105560",
+      "corp_name": "KB금융",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 KB금융의 ETF 상품 라인업을 설명할 뿐 기업 자체의 원전 사업 영위를 나타내지 않습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "272210",
+      "corp_name": "한화시스템",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 전자공격 시스템, 온도 측정 시스템, 공지통신 네트워크 등 원자력 발전과 무관한 기술에 관한 내용입니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "161390",
+      "corp_name": "한국타이어앤테크놀로지",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 산업용 AR HMD, CMF Lab, AMR 플랫폼 개발 등 타이어 및 물류 관련 연구개발 활동만 언급할 뿐 원전 관련 사업은 다루지 않습니다.",
+      "evidence_verified": false
+    }
+  ],
+  "basket": [
+    {
+      "stock_code": "047040",
+      "corp_name": "대우건설",
+      "label": "핵심",
+      "evidence": "원자력 분야의 경우, 당사는 원자력 생애 전 주기 수행 실적을 보유한 국내 유일 기업으로서 국내시장에서는 대형원전, 연구용 원자로, 방사성폐기물 처분시설 및 핵연료 생산시설 등 원자력 전 분야에서 다수의 독보적인 수행 실적을 보유하고 있으며, 원자력 사업 전담 조직의 확대 운영을 통해 수주 및 수행 경쟁력을 한층 강화하였습니다.",
+      "evidence_chunk_id": "20260318001029:0008",
+      "rcept_no": "20260318001029",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "대형원전, 핵연료, SMR 등 원자력 전 분야에서 독보적인 수행 실적을 보유하고 사업을 추진 중입니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "000150",
+      "corp_name": "두산",
+      "label": "핵심",
+      "evidence": "당사는 1987년 한빛 3,4호기부터 국내 유일의 원자로 핵심설비 주계약자로 참여하여 왔습니다.",
+      "evidence_chunk_id": "20250814002379:0169",
+      "rcept_no": "20250814002379",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "두산에너빌리티는 국내 유일의 원자로 핵심설비 주계약자로 원전 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "034020",
+      "corp_name": "두산에너빌리티",
+      "label": "핵심",
+      "evidence": "사업별로 살펴보면, 우수한 주조 및 단조 설비와 기술 역량을 바탕으로 원전의 핵심 설비인 원자로, 증기발생기, 냉각펌프를 비롯해 핵연료 취급 설비, 핵연료 운반 용기(Cask), 원자로 계통 보조기기 등 대부분의 주요 설비와 국내외 복합화력발전소에 가스 터빈, 스팀 터빈 등 핵심 주기기를 제작·공급하고 있습니다.",
+      "evidence_chunk_id": "20260320001246:0000",
+      "rcept_no": "20260320001246",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "원전의 핵심 설비인 원자로, 증기발생기, 냉각펌프 및 보조기기 등을 제작·공급하는 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "핵심",
+      "evidence": "원자로 부문에서는 원자력발전소 1차계통 설계기술을 기반으로 국내 신규원전 건설사업(새울3,4호기, 신한울3,4호기)의 원자로계통설계 용역을 무결점으로 수행하고 있으며, 국내 가동원전의 안전성 증진 및 효율성 개선을 위한 설계개선 용역들의 수행을 통해 발전소 운영사인 한국수력원자력의 안전한 원전 운영의 임무를 지원하고 있습니다.",
+      "evidence_chunk_id": "20260317000686:0029",
+      "rcept_no": "20260317000686",
+      "section_path": "II. 사업의 내용 > 4. 매출 및 수주상황",
+      "reason": "원자력발전소 설계 및 원자로계통설계 용역, SMR 설계 기술 개발 등을 수행하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "051600",
+      "corp_name": "한전KPS",
+      "label": "핵심",
+      "evidence": "제어봉집합체 안내관 지지핀 교체, 원자로 관통관 정비 및 원자로 Baffle Former Bolt 등 원자로 용기 및 내장품검사, 제어봉, 원전연료에 대한 정밀진단 및 안전성 평가 등",
+      "evidence_chunk_id": "20250514000974:0019",
+      "rcept_no": "20250514000974",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "원자로 정비, 원자로 냉각재펌프 정비, 증기발생기 정비 등 원전 정비 및 검사 사업을 주요 업무로 수행하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "052690",
+      "corp_name": "한전기술",
+      "label": "핵심",
+      "evidence": "회사는 한빛 3,4호기 원자력발전소 설계를 시작으로 다수호기의 원자력발전소 설계업무를 독자적으로 수행하는 과정에서 1,000MW급 원자력발전소 설계를 한국형으로 표준화하였고, 이후 국제 경쟁력을 보유한 1,400MW급 신형 경수로 설계기술(APR1400)을 개발함으로써 원전의 안전성과 경제성을 제고하여 왔습니다.",
+      "evidence_chunk_id": "20260326001003:0065",
+      "rcept_no": "20260326001003",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "원자력발전소 종합설계 및 원자로 계통설계, SMR 노형 개발 등을 주요 사업으로 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "329180",
+      "corp_name": "HD현대중공업",
+      "label": "관련",
+      "evidence": "최근에는 에너지 전환 흐름에 발맞추어 정부 및 민간 발전사업자가 추진하는 해상풍력발전 등 신재생에너지사업 뿐만 아니라 소형모듈원자로(SMR)와 같은 차세대 원전사업에도 참여하며 사업 포트폴리오를 확장해 나가고 있습니다.",
+      "evidence_chunk_id": "20260320000859:0003",
+      "rcept_no": "20260320000859",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "소형모듈원자로(SMR)와 같은 차세대 원전사업에 참여하고 있다고 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "관련",
+      "evidence": "당사는 중속엔진을 활용한 원자력 발전소 비상발전기를 제작 및 공급하고 있으며, 원전 비상발전기는 원전의 안전성 및 신뢰성 확보에 필요한 핵심 주요기기로서 발전소 외부전원 상실사고(Loss of Off Site Power : LOSP) 시 또는 원자로 냉각제 상실사고(Loss-of-Coolant Accident : LOCA)와 외부전원 상실사고가 동시에 발생하더라도 원자로를 안전하게 정지시키는 데 필요한 비상 전력을 공급하는 기기입니다.",
+      "evidence_chunk_id": "20260318000939:0043",
+      "rcept_no": "20260318000939",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "원자력 발전소 비상발전기를 제작 및 공급하고 있으나 주된 사업인지 여부는 알 수 없습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "000720",
+      "corp_name": "현대건설",
+      "label": "관련",
+      "evidence": "현대건설은 세계 최고의 원전 기술력을 보유하고 있으며, 국내외 대형원전 24기에 시공 주간사로 참여하며 100% 시공 기술 자립을 달성하였습니다.",
+      "evidence_chunk_id": "20260318001395:0095",
+      "rcept_no": "20260318001395",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "국내외 대형원전 시공 주간사 참여 및 SMR 기술개발 등 원전 사업을 영위하고 있으나 주된 사업인지 여부는 불분명합니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "062040",
+      "corp_name": "산일전기",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 변압기 및 전기설비 관련 특허 목록만 나열되어 있어 원전 관련 사업 여부를 판단할 수 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "047050",
+      "corp_name": "포스코인터내셔널",
+      "label": "모름",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 에너지 사업이라고만 명시되어 있어 원전 관련 사업 여부를 확인할 수 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 산업단지 대상 증기 판매 및 한국전력거래소를 통한 전력 판매에 관한 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "009540",
+      "corp_name": "HD한국조선해양",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 해상 변전소, 선박 엔진, 수전해 시스템 등 조선 및 친환경 선박 기술 개발에 관한 내용으로 원전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "267250",
+      "corp_name": "HD현대",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌문에는 원자력 발전과 관련된 사업이나 연구개발 내용이 포함되어 있지 않습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "204320",
+      "corp_name": "HL만도",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 자율주행 및 차량용 레이더 등 자동차 부품 관련 연구개발 실적으로 원전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "105560",
+      "corp_name": "KB금융",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 KB금융의 ETF 상품 라인업을 설명할 뿐 기업 자체의 원전 사업 영위를 나타내지 않습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "373220",
+      "corp_name": "LG에너지솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 이차전지 및 배터리 개발에 관한 것으로 원자력 발전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "051910",
+      "corp_name": "LG화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 이차전지, 양극재, ESS 등 배터리 관련 연구개발 활동에 관한 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌에는 연료전지 및 AI 기술 개발만 언급되어 있으며 원전 관련 사업 내용은 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "010130",
+      "corp_name": "고려아연",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 이차전지 소재, 광산개발, 제련 부산물 회수 등만 언급되어 있습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "006280",
+      "corp_name": "녹십자",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 생화학 및 헤모글로빈 측정시스템 등 의료 기기 관련 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "006400",
+      "corp_name": "삼성SDI",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 리튬이온 2차 전지 및 전자재료 사업만 명시되어 있어 원전과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "010140",
+      "corp_name": "삼성중공업",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 선박 건조, 친환경 연료공급 시스템 등 조선업 관련 연구개발 활동만 기술하고 있습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "071320",
+      "corp_name": "지역난방공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 지역난방용 축열조, 이중보온관, 냉난방기 등 지역난방 관련 기술만 다루고 있습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "005420",
+      "corp_name": "코스모화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 이차전지 양극활물질 원료인 황산코발트, 황산니켈, 탄산리튬 및 이산화티타늄 사업에 관한 내용으로 원전 테마와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "036460",
+      "corp_name": "한국가스공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 천연가스 공급설비, LNG 저장탱크, 배관시설 등 가스 관련 사업만 다룹니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "161390",
+      "corp_name": "한국타이어앤테크놀로지",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 산업용 AR HMD, CMF Lab, AMR 플랫폼 개발 등 타이어 및 물류 관련 연구개발 활동만 언급할 뿐 원전 관련 사업은 다루지 않습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "009830",
+      "corp_name": "한화솔루션",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 태양전지 및 태양광 관련 기술에 관한 것으로 원자력 발전과는 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "272210",
+      "corp_name": "한화시스템",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 전자공격 시스템, 온도 측정 시스템, 공지통신 네트워크 등 원자력 발전과 무관한 기술에 관한 내용입니다.",
+      "evidence_verified": false
+    }
+  ]
+}

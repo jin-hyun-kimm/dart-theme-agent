@@ -1,0 +1,219 @@
+{
+  "theme_name": "2차전지",
+  "theme_description": "2차전지(리튬이온 배터리) 밸류체인. 전기차·ESS용 배터리 셀 제조, 양극재·음극재·분리막·전해액 등 소재, 전구체·리튬 가공, 배터리 장비 사업을 하는 기업.\n",
+  "fiscal_year": null,
+  "k_per_query": 20,
+  "top_chunks": 3,
+  "max_candidates": 60,
+  "skip_define": true,
+  "stages": [
+    {
+      "name": "전체",
+      "queries": [
+        "2차전지(리튬이온 배터리) 밸류체인. 전기차·ESS용 배터리 셀 제조, 양극재·음극재·분리막·전해액 등 소재, 전구체·리튬 가공, 배터리 장비 사업을 하는 기업.\n"
+      ]
+    }
+  ],
+  "judged": [
+    {
+      "stock_code": "450080",
+      "corp_name": "에코프로머티",
+      "label": "핵심",
+      "evidence": "당사는 삼원계 전구체 합성기술 특화기업으로 리튬이온 이차전지의 핵심소재인 양극소재용 전구체를 생산하고 있습니다.",
+      "evidence_chunk_id": "20260320000475:0004",
+      "rcept_no": "20260320000475",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "리튬이온 이차전지의 핵심소재인 양극소재용 전구체를 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "005490",
+      "corp_name": "POSCO홀딩스",
+      "label": "핵심",
+      "evidence": "사인 포스코ESM을 흡수합병하여 현재 이차전지 밸류체인에서 후방산업 성격을 띄고있는 고부가가치 소재인 음극활물질(음극재) 소재와 양극활물질(양극재) 소재를 모두 생산중에 있습니다.",
+      "evidence_chunk_id": "20250312001016:0172",
+      "rcept_no": "20250312001016",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "이차전지 밸류체인의 핵심 소재인 양극재와 음극재를 모두 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "006400",
+      "corp_name": "삼성SDI",
+      "label": "핵심",
+      "evidence": "당사는 중ㆍ대형전지, 소형전지 등의 리튬이온 2차 전지를 생산/판매하는 에너지솔루션 사업부문과 반도체 및 디스플레이 소재 등을 생산/판매하는 전자재료 사업부문을 영위하고 있습니다.",
+      "evidence_chunk_id": "20250311001275:0000",
+      "rcept_no": "20250311001275",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "리튬이온 2차 전지를 생산하는 에너지솔루션 사업부문이 전체 매출의 95%를 차지하는 주된 사업입니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "096770",
+      "corp_name": "SK이노베이션",
+      "label": "핵심",
+      "evidence": "중대형 배터리사업은 전기자동차 및 ESS(Energy Storage System)에 사용되는 대용량 리튬-이온 배터리를 개발하여 생산ㆍ판매하는 사업입니다.",
+      "evidence_chunk_id": "20260316000827:0221",
+      "rcept_no": "20260316000827",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "전기차 및 ESS용 대용량 리튬이온 배터리를 개발, 생산 및 판매하는 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "핵심",
+      "evidence": "중대형 배터리사업은 전기자동차 및 ESS(Energy Storage System)에 사용되는 대용량 리튬-이온 배터리를 개발하여 생산ㆍ판매하는 사업입니다.",
+      "evidence_chunk_id": "20260318001157:0408",
+      "rcept_no": "20260318001157",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "전기차 및 ESS용 대용량 리튬이온 배터리를 개발, 생산 및 판매하는 중대형 배터리 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "003550",
+      "corp_name": "LG",
+      "label": "핵심",
+      "evidence": "LG화학은 2020년 12월 1일 해당 사업부문을 단순 물적분할하여 종속회사 (주)LG에너지솔루션을 설립하였습니다.",
+      "evidence_chunk_id": "20260318001025:0278",
+      "rcept_no": "20260318001025",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "종속회사인 LG에너지솔루션을 통해 2차전지 제조업을 영위하고 있음이 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "051910",
+      "corp_name": "LG화학",
+      "label": "핵심",
+      "evidence": "당사는 2020년 12월 1일 해당 사업부문을 단순 물적분할하여 종속회사 (주)LG에너지솔루션을 설립하였습니다.",
+      "evidence_chunk_id": "20250731000339:0079",
+      "rcept_no": "20250731000339",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "종속회사인 LG에너지솔루션을 통해 2차전지 제조업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "066970",
+      "corp_name": "엘앤에프",
+      "label": "핵심",
+      "evidence": "iCoO2 중심의 리튬이온 2차전지 제품에서 니켈복합계 중심의 적용 제품으로 리튬이온 2차전지산업의 변화를 주도하는 세계적 수준의 양극소재 전문 개발 및 제조업체로 성장하였습니다.",
+      "evidence_chunk_id": "20250311001260:0006",
+      "rcept_no": "20250311001260",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "엘앤에프는 리튬이온 2차전지용 양극소재를 전문적으로 개발 및 제조하는 기업입니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "003670",
+      "corp_name": "포스코퓨처엠",
+      "label": "핵심",
+      "evidence": "당사는 포스코그룹 차원에서 원료부터 소재, 폐배터리 리사이클링까지 배터리소재 풀 밸류체인을 구축하고 있고, 흑연계 음극재를 국내에서 유일하게 생산하고 있어 향후 글로벌 완성차, 배터리 기업들 대상 매출액이 확대될 가능성이 있습니다.",
+      "evidence_chunk_id": "20260312000826:0046",
+      "rcept_no": "20260312000826",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "배터리소재 풀 밸류체인을 구축하고 흑연계 음극재를 국내에서 유일하게 생산하고 있습니다.",
+      "evidence_verified": true
+    }
+  ],
+  "basket": [
+    {
+      "stock_code": "003550",
+      "corp_name": "LG",
+      "label": "핵심",
+      "evidence": "LG화학은 2020년 12월 1일 해당 사업부문을 단순 물적분할하여 종속회사 (주)LG에너지솔루션을 설립하였습니다.",
+      "evidence_chunk_id": "20260318001025:0278",
+      "rcept_no": "20260318001025",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "종속회사인 LG에너지솔루션을 통해 2차전지 제조업을 영위하고 있음이 명시되어 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "051910",
+      "corp_name": "LG화학",
+      "label": "핵심",
+      "evidence": "당사는 2020년 12월 1일 해당 사업부문을 단순 물적분할하여 종속회사 (주)LG에너지솔루션을 설립하였습니다.",
+      "evidence_chunk_id": "20250731000339:0079",
+      "rcept_no": "20250731000339",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "종속회사인 LG에너지솔루션을 통해 2차전지 제조업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "005490",
+      "corp_name": "POSCO홀딩스",
+      "label": "핵심",
+      "evidence": "사인 포스코ESM을 흡수합병하여 현재 이차전지 밸류체인에서 후방산업 성격을 띄고있는 고부가가치 소재인 음극활물질(음극재) 소재와 양극활물질(양극재) 소재를 모두 생산중에 있습니다.",
+      "evidence_chunk_id": "20250312001016:0172",
+      "rcept_no": "20250312001016",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "이차전지 밸류체인의 핵심 소재인 양극재와 음극재를 모두 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "핵심",
+      "evidence": "중대형 배터리사업은 전기자동차 및 ESS(Energy Storage System)에 사용되는 대용량 리튬-이온 배터리를 개발하여 생산ㆍ판매하는 사업입니다.",
+      "evidence_chunk_id": "20260318001157:0408",
+      "rcept_no": "20260318001157",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "전기차 및 ESS용 대용량 리튬이온 배터리를 개발, 생산 및 판매하는 중대형 배터리 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "096770",
+      "corp_name": "SK이노베이션",
+      "label": "핵심",
+      "evidence": "중대형 배터리사업은 전기자동차 및 ESS(Energy Storage System)에 사용되는 대용량 리튬-이온 배터리를 개발하여 생산ㆍ판매하는 사업입니다.",
+      "evidence_chunk_id": "20260316000827:0221",
+      "rcept_no": "20260316000827",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "전기차 및 ESS용 대용량 리튬이온 배터리를 개발, 생산 및 판매하는 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "006400",
+      "corp_name": "삼성SDI",
+      "label": "핵심",
+      "evidence": "당사는 중ㆍ대형전지, 소형전지 등의 리튬이온 2차 전지를 생산/판매하는 에너지솔루션 사업부문과 반도체 및 디스플레이 소재 등을 생산/판매하는 전자재료 사업부문을 영위하고 있습니다.",
+      "evidence_chunk_id": "20250311001275:0000",
+      "rcept_no": "20250311001275",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "리튬이온 2차 전지를 생산하는 에너지솔루션 사업부문이 전체 매출의 95%를 차지하는 주된 사업입니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "450080",
+      "corp_name": "에코프로머티",
+      "label": "핵심",
+      "evidence": "당사는 삼원계 전구체 합성기술 특화기업으로 리튬이온 이차전지의 핵심소재인 양극소재용 전구체를 생산하고 있습니다.",
+      "evidence_chunk_id": "20260320000475:0004",
+      "rcept_no": "20260320000475",
+      "section_path": "II. 사업의 내용 > 2. 주요 제품 및 서비스",
+      "reason": "리튬이온 이차전지의 핵심소재인 양극소재용 전구체를 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "066970",
+      "corp_name": "엘앤에프",
+      "label": "핵심",
+      "evidence": "iCoO2 중심의 리튬이온 2차전지 제품에서 니켈복합계 중심의 적용 제품으로 리튬이온 2차전지산업의 변화를 주도하는 세계적 수준의 양극소재 전문 개발 및 제조업체로 성장하였습니다.",
+      "evidence_chunk_id": "20250311001260:0006",
+      "rcept_no": "20250311001260",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "엘앤에프는 리튬이온 2차전지용 양극소재를 전문적으로 개발 및 제조하는 기업입니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "003670",
+      "corp_name": "포스코퓨처엠",
+      "label": "핵심",
+      "evidence": "당사는 포스코그룹 차원에서 원료부터 소재, 폐배터리 리사이클링까지 배터리소재 풀 밸류체인을 구축하고 있고, 흑연계 음극재를 국내에서 유일하게 생산하고 있어 향후 글로벌 완성차, 배터리 기업들 대상 매출액이 확대될 가능성이 있습니다.",
+      "evidence_chunk_id": "20260312000826:0046",
+      "rcept_no": "20260312000826",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "배터리소재 풀 밸류체인을 구축하고 흑연계 음극재를 국내에서 유일하게 생산하고 있습니다.",
+      "evidence_verified": true
+    }
+  ]
+}

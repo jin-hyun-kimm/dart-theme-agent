@@ -59,6 +59,7 @@ class ThemeState(TypedDict, total=False):
     k_per_query: int
     top_chunks: int
     max_candidates: int
+    skip_define: bool  # True 면 정의 노드를 건너뛰고 주어진 stages 를 그대로 쓴다 (C-1 R2 ablation)
     stages: list[dict]
     candidates: list[Candidate]
     judged: Annotated[list[JudgedCandidate], operator.add]

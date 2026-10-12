@@ -34,7 +34,7 @@ def cmd_theme(a: argparse.Namespace) -> int:
     from dta.graph.graph import build_graph
 
     graph = build_graph(with_gate=not a.no_gate)
-    cfg = {"configurable": {"thread_id": f"cli-{int(time.time())}"}}
+    cfg = {"configurable": {"thread_id": f"cli-{int(time.time())}"}, "max_concurrency": 8}
     state = {
         "theme_name": a.name,
         "theme_description": a.desc,

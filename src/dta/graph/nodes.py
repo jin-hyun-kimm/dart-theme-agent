@@ -38,6 +38,8 @@ def evidence_in_chunk(evidence: str, chunk_text: str) -> bool:
 
 def make_define_theme(llm_factory: Callable[[], object]):
     def define_theme(state: ThemeState) -> dict:
+        if state.get("skip_define") and state.get("stages"):
+            return {}
         llm = llm_factory()
         out: ThemeDefinition = llm.with_structured_output(ThemeDefinition).invoke(
             _prompt(

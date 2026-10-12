@@ -107,3 +107,24 @@ def test_graph_end_to_end_with_gate():
     assert good["evidence_verified"] and good["rcept_no"] == "r1"
     out2 = graph.invoke(Command(resume={"approve": True}), cfg)
     assert out2["approved"] is True
+
+
+def test_skip_define_keeps_given_stages():
+    calls = {"define": 0}
+
+    class CountingLLM(FakeLLM):
+        def with_structured_output(self, schema):
+            if schema is ThemeDefinition:
+                calls["define"] += 1
+            return FakeStructured(schema)
+
+    graph = build_graph(llm_factory=lambda: CountingLLM(), search_fn=fake_search, with_gate=False)
+    cfg = {"configurable": {"thread_id": "t2"}}
+    out = graph.invoke(
+        {"theme_name": "원전", "theme_description": "원자력 발전 밸류체인", "skip_define": True,
+         "stages": [{"name": "전체", "queries": ["원자력 발전 밸류체인"]}]},
+        cfg,
+    )
+    assert calls["define"] == 0
+    assert out["stages"][0]["name"] == "전체"
+    assert len(out["basket"]) == 3

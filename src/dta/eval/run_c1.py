@@ -27,6 +27,7 @@ from dta.index.search import get_searcher
 STAGES_DIR = RESULTS_DIR / "stages"
 BASKETS_DIR = RESULTS_DIR / "c1_baskets"
 R0_TOP_N = 15  # 검색만 구성의 바스켓 크기 (정답 평균 크기 ~9.4 의 1.5배)
+MAX_CONCURRENCY = 8  # 검증 노드 병렬 LLM 호출 상한 (Vertex 한도·504 보호)
 
 
 def _search_fn(embedder: str, mode: str):
@@ -50,7 +51,7 @@ def run_theme(
 
     # R1: 그래프 전체
     g = build_graph(search_fn=search_fn, with_gate=False)
-    cfg = {"configurable": {"thread_id": f"c1-{theme.id}-R1"}}
+    cfg = {"configurable": {"thread_id": f"c1-{theme.id}-R1"}, "max_concurrency": MAX_CONCURRENCY}
     t0 = time.time()
     out = g.invoke(dict(base), cfg)
     t_r1 = time.time() - t0
@@ -81,10 +82,10 @@ def run_theme(
 
     # R2: 정의 없이 테마 설명 한 줄로 검색 + 검증
     g2 = build_graph(search_fn=search_fn, with_gate=False)
-    cfg2 = {"configurable": {"thread_id": f"c1-{theme.id}-R2"}}
+    cfg2 = {"configurable": {"thread_id": f"c1-{theme.id}-R2"}, "max_concurrency": MAX_CONCURRENCY}
     t0 = time.time()
-    # 정의 노드를 건너뛰기 위해 stages 를 설명 한 줄로 고정하고 define_theme 결과를 덮어쓴다
-    out2 = g2.invoke({**base, "stages": [{"name": "전체", "queries": [theme.description]}]}, cfg2)
+    # 정의 노드를 건너뛰고(skip_define) 테마 설명 한 줄을 유일한 검색어로 쓴다
+    out2 = g2.invoke({**base, "skip_define": True, "stages": [{"name": "전체", "queries": [theme.description]}]}, cfg2)
     _save(theme.id, "R2", out2)
     rows.append(
         _row(

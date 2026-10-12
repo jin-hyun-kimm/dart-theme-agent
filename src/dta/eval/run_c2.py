@@ -44,8 +44,13 @@ def main(
     date, themes = load_themes()
     golds = {t.id: build_gold(t, date) for t in themes}
     rows = []
+    seen_bm25 = False
     for emb in embedders:
         for mode in modes:
+            if mode == "bm25":
+                if seen_bm25:
+                    continue  # BM25 는 임베딩과 무관 → 한 번만
+                seen_bm25 = True
             s = Searcher(emb, mode)
             for t in themes:
                 t0 = time.time()

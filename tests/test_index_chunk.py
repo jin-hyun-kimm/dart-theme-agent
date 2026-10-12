@@ -17,7 +17,14 @@ def test_chunks_respect_section_and_target():
         _p("II > 2", "가스터빈 | 900 | 35%", 5, kind="table_row"),
     ]
     chunks = chunk_paragraphs(
-        paras, corp_code="c", stock_code="s", corp_name="n", fiscal_year=2024, rcept_no="r", target=600, overlap=50
+        paras,
+        corp_code="c",
+        stock_code="s",
+        corp_name="n",
+        fiscal_year=2024,
+        rcept_no="r",
+        target=600,
+        overlap=50,
     )
     assert all(len(c.text) <= 600 + 50 + 1 + 400 for c in chunks)  # 겹침 + 문단 하나 초과 허용
     sections = [c.section_path for c in chunks]
@@ -35,6 +42,12 @@ def test_chunks_respect_section_and_target():
 def test_long_single_paragraph_is_split():
     long = "아주 긴 문장입니다. " * 200  # ~2,200자
     chunks = chunk_paragraphs(
-        [_p("II > 1", long, 0)], corp_code="c", stock_code="s", corp_name="n", fiscal_year=2024, rcept_no="r", max_len=900
+        [_p("II > 1", long, 0)],
+        corp_code="c",
+        stock_code="s",
+        corp_name="n",
+        fiscal_year=2024,
+        rcept_no="r",
+        max_len=900,
     )
     assert len(chunks) >= 3 and all(len(c.text) <= 900 + 100 + 1 for c in chunks)

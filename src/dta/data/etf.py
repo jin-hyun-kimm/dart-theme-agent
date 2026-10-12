@@ -49,7 +49,9 @@ def holdings(etf_ticker: str, date: str) -> pd.DataFrame:
     first_col = pdf.columns[0]
     pdf = pdf.rename(columns={first_col: "ticker"})
     weight_col = next((c for c in pdf.columns if "비중" in str(c)), None)
-    out = pd.DataFrame({"ticker": pdf["ticker"].astype(str), "weight": pdf[weight_col] if weight_col else 0.0})
+    out = pd.DataFrame(
+        {"ticker": pdf["ticker"].astype(str), "weight": pdf[weight_col] if weight_col else 0.0}
+    )
     out = out[out["ticker"].map(lambda t: bool(_TICKER_RE.match(t)))]
     out = out[out["weight"] > 0].sort_values("weight", ascending=False).reset_index(drop=True)
     out.to_csv(path, index=False)

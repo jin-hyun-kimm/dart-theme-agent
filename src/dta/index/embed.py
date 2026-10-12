@@ -33,4 +33,6 @@ class Embedder:
         return _load(self.name)
 
     def encode(self, texts: list[str], batch_size: int = 16) -> np.ndarray:
-        return self.model.encode(texts, batch_size=batch_size, normalize_embeddings=True, show_progress_bar=False)
+        return self.model.encode(
+            texts, batch_size=batch_size, normalize_embeddings=True, show_progress_bar=False
+        )

@@ -48,7 +48,9 @@ def main() -> int:
     pd.set_option("display.width", 200)
     pd.set_option("display.max_rows", 60)
     print(ok[cols].head(40).to_string(index=False))
-    print(f"\n저장: {out}  (후보 {len(df)}, 실패 {df['error'].notna().sum() if 'error' in df.columns else 0})")
+    print(
+        f"\n저장: {out}  (후보 {len(df)}, 실패 {df['error'].notna().sum() if 'error' in df.columns else 0})"
+    )
     return 0
 
 

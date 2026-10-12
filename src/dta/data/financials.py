@@ -45,7 +45,18 @@ def fetch_financials(dart_client, corp_code: str, fiscal_year: int, fs_div: str 
     raw = dart_client.dart.finstate_all(corp_code, fiscal_year, reprt_code=REPRT_ANNUAL, fs_div=fs_div)
     time.sleep(0.25)
     if raw is None or len(raw) == 0:
-        df = pd.DataFrame(columns=["corp_code", "fiscal_year", "fs_div", "account_id", "account_nm", "sj_div", "amount", "amount_prev"])
+        df = pd.DataFrame(
+            columns=[
+                "corp_code",
+                "fiscal_year",
+                "fs_div",
+                "account_id",
+                "account_nm",
+                "sj_div",
+                "amount",
+                "amount_prev",
+            ]
+        )
         df.to_csv(path, index=False)
         return df
     raw = raw.astype(str)

@@ -1,0 +1,22 @@
+# CI 용 (모델·토치 제외). 단위 테스트는 픽스처만 쓴다.
+pykrx>=1.2
+OpenDartReader>=0.2
+pandas>=2.2,<3
+numpy>=1.26,<3
+lxml>=5
+beautifulsoup4>=4.12
+pydantic>=2.6,<3
+python-dotenv>=1.0
+httpx>=0.27
+requests>=2.31
+pyyaml>=6
+tqdm>=4.66
+kiwipiepy>=0.18
+rank_bm25>=0.2
+langgraph>=1.0
+langchain>=1.0
+langchain-core>=1.0
+langchain-mcp-adapters>=0.1
+mcp>=1.10
+pytest>=8
+ruff>=0.5

@@ -1,0 +1,29 @@
+# 전체 (로컬 실행). CI 는 requirements-ci.txt
+pykrx>=1.2
+OpenDartReader>=0.2
+pandas>=2.2,<3
+numpy>=1.26,<3
+lxml>=5
+beautifulsoup4>=4.12
+pydantic>=2.6,<3
+python-dotenv>=1.0
+httpx>=0.27
+requests>=2.31
+pyyaml>=6
+tqdm>=4.66
+# 검색·색인
+torch>=2.3
+sentence-transformers>=3.0
+chromadb>=0.5
+kiwipiepy>=0.18
+rank_bm25>=0.2
+# 에이전트·MCP
+langgraph>=1.0
+langchain>=1.0
+langchain-core>=1.0
+langchain-google-vertexai>=2.0
+langchain-mcp-adapters>=0.1
+mcp>=1.10
+# 개발
+pytest>=8
+ruff>=0.5

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="430" viewBox="0 0 1180 430" font-family="Apple SD Gothic Neo, Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif">
+  <rect width="1180" height="430" fill="#fcfcfb"/>
+  <text x="24" y="38" font-size="20" font-weight="700" fill="#0b0b0b">근거 — 테마 엔진 그래프(LangGraph)와 MCP 도구 계층</text>
+  <text x="24" y="60" font-size="12" fill="#52514e">LLM 호출은 정의·검증 두 노드뿐(AST 게이트). 검색·조립·채점은 결정론. 근거 문장은 코드가 원문과 글자 단위로 대조한다.</text>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+  <g font-size="13" fill="#0b0b0b">
+    <rect x="24" y="110" width="150" height="74" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+    <text x="99" y="138" text-anchor="middle" font-weight="700">정의 (LLM)</text>
+    <text x="99" y="158" text-anchor="middle" font-size="11" fill="#52514e">테마 설명 → 밸류체인</text>
+    <text x="99" y="174" text-anchor="middle" font-size="11" fill="#52514e">단계 3~6 · 검색어 2~4</text>
+    <rect x="214" y="110" width="190" height="74" rx="8" fill="#ffffff" stroke="#52514e" stroke-width="1.5"/>
+    <text x="309" y="138" text-anchor="middle" font-weight="700">검색 (결정론)</text>
+    <text x="309" y="158" text-anchor="middle" font-size="11" fill="#52514e">KURE/bge-m3 + BM25 → RRF</text>
+    <text x="309" y="174" text-anchor="middle" font-size="11" fill="#52514e">기업 단위 집계 · 발췌 3개</text>
+    <rect x="444" y="110" width="200" height="74" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+    <text x="544" y="138" text-anchor="middle" font-weight="700">검증 ×N 병렬 (LLM)</text>
+    <text x="544" y="158" text-anchor="middle" font-size="11" fill="#52514e">핵심 | 관련 | 무관 | 모름</text>
+    <text x="544" y="174" text-anchor="middle" font-size="11" fill="#52514e">근거 문장 = 원문 그대로 (코드 대조)</text>
+    <rect x="684" y="110" width="150" height="74" rx="8" fill="#ffffff" stroke="#52514e" stroke-width="1.5"/>
+    <text x="759" y="138" text-anchor="middle" font-weight="700">조립</text>
+    <text x="759" y="158" text-anchor="middle" font-size="11" fill="#52514e">기업·판정·근거</text>
+    <text x="759" y="174" text-anchor="middle" font-size="11" fill="#52514e">접수번호·소절·URL</text>
+    <path d="M874,147 L950,110 L1026,147 L950,184 Z" fill="#fff7f2" stroke="#eb6834" stroke-width="2"/>
+    <text x="950" y="143" text-anchor="middle" font-weight="700" font-size="12">인간 게이트</text>
+    <text x="950" y="160" text-anchor="middle" font-size="10.5" fill="#52514e">interrupt → 승인</text>
+    <line x1="174" y1="147" x2="212" y2="147" stroke="#52514e" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="404" y1="147" x2="442" y2="147" stroke="#52514e" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="644" y1="147" x2="682" y2="147" stroke="#52514e" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="834" y1="147" x2="872" y2="147" stroke="#52514e" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="1026" y1="147" x2="1150" y2="147" stroke="#52514e" stroke-width="1.5" marker-end="url(#a)"/>
+    <text x="1150" y="135" text-anchor="end" font-size="11" fill="#52514e">확정 바스켓</text>
+    <text x="1150" y="166" text-anchor="end" font-size="11" fill="#52514e">→ ETF 구성종목으로 채점</text>
+  </g>
+  <g font-size="12" fill="#0b0b0b">
+    <rect x="24" y="250" width="1126" height="140" rx="10" fill="#f1ede8" stroke="#e3e3e3"/>
+    <text x="40" y="276" font-weight="700" font-size="13">kr-finance-mcp (FastMCP) — 도구 8개 · 숫자 출력에 단위·연결/별도·사업연도·출처 필수 · 오류에 "다음에 할 일"</text>
+    <g font-size="12">
+      <rect x="40" y="292" width="250" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="165" y="315" text-anchor="middle">search_report_text (의미+키워드)</text>
+      <rect x="302" y="292" width="200" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="402" y="315" text-anchor="middle">get_report_section</text>
+      <rect x="514" y="292" width="190" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="609" y="315" text-anchor="middle">get_financials (억원·원)</text>
+      <rect x="716" y="292" width="190" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="811" y="315" text-anchor="middle">search_companies</text>
+      <rect x="918" y="292" width="212" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="1024" y="315" text-anchor="middle">list_filings</text>
+      <rect x="40" y="340" width="250" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="165" y="363" text-anchor="middle">get_prices (KRX 일봉)</text>
+      <rect x="302" y="340" width="200" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="402" y="363" text-anchor="middle">get_etf_holdings</text>
+      <rect x="514" y="340" width="190" height="36" rx="6" fill="#ffffff" stroke="#e3e3e3"/><text x="609" y="363" text-anchor="middle">search_news (네이버)</text>
+      <text x="716" y="363" font-size="11" fill="#52514e">데이터: OpenDART(사업보고서 원문·재무) · KRX(pykrx) · 네이버 검색 API · 코스피200 × 2024·2025 = 399/402 보고서, 청크 50,535</text>
+    </g>
+  </g>
+  <line x1="309" y1="184" x2="309" y2="250" stroke="#2a78d6" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#a)"/>
+  <text x="318" y="222" font-size="11" fill="#2a78d6">langchain-mcp-adapters</text>
+</svg>

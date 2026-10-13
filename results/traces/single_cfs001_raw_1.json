@@ -1,0 +1,14 @@
+{
+  "qid": "single_cfs001",
+  "variant": "raw",
+  "attempt": 1,
+  "question": "산일전기의 2025년 연결 기준 당기순이익은 얼마인가? (억원 단위로 답하라)",
+  "gold": 148921775330.0,
+  "gold_kind": "won",
+  "answer": "",
+  "correct": false,
+  "fail_type": "no_number",
+  "error": "RefreshError: Reauthentication is needed. Please run `gcloud auth application-default login` to reauthenticate.",
+  "seconds": 1.1,
+  "trace": []
+}

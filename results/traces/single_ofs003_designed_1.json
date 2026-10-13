@@ -1,0 +1,14 @@
+{
+  "qid": "single_ofs003",
+  "variant": "designed",
+  "attempt": 1,
+  "question": "한화의 2025년 별도 기준 당기순이익은 얼마인가? (억원 단위로 답하라)",
+  "gold": 48810000000.0,
+  "gold_kind": "won",
+  "answer": "",
+  "correct": false,
+  "fail_type": "no_number",
+  "error": "RefreshError: Reauthentication is needed. Please run `gcloud auth application-default login` to reauthenticate.",
+  "seconds": 0.6,
+  "trace": []
+}

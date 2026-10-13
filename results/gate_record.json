@@ -1,0 +1,303 @@
+{
+  "theme": "방산",
+  "config": {
+    "thread_id": "gate-1791863995"
+  },
+  "seconds_to_gate": 28.1,
+  "interrupt_payload": [
+    {
+      "theme": "방산",
+      "n_core": 8,
+      "n_related": 3,
+      "n_unknown": 0,
+      "n_unrelated": 14
+    }
+  ],
+  "paused_next_nodes": [
+    "human_gate"
+  ],
+  "basket_at_gate": [
+    {
+      "stock_code": "079550",
+      "corp_name": "LIG디펜스앤에어로스페이스",
+      "label": "핵심",
+      "evidence": "연결회사는 국방과학연구소의 연구개발 사업에 참여하고 있으며, 현재 생산하고 있는 모든 제품영역에서 다수의 핵심기술 및 무기체계 연구개발 실적을 보유하고 있습니다.",
+      "evidence_chunk_id": "20250321002001:0038",
+      "rcept_no": "20250321002001",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "국방과학연구소 사업에 참여하며 유도무기, 레이더, 함정 전투체계 등 무기체계를 개발 및 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "103140",
+      "corp_name": "풍산",
+      "label": "핵심",
+      "evidence": "방산사업부문 | ㈜풍산 | 군용탄, 스포츠탄 | 방위산업(탄약 제조업)",
+      "evidence_chunk_id": "20260312001327:0063",
+      "rcept_no": "20260312001327",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "풍산은 방산사업부문에서 군용탄과 스포츠탄을 생산하는 방위산업(탄약 제조업)을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "047810",
+      "corp_name": "한국항공우주",
+      "label": "핵심",
+      "evidence": "국내 항공산업은 과거 핵심 항공전력을 해외 직도입에 의존해 왔으나, 현재는 KT-1 기본훈련기, T-50 고등훈련기, FA-50 전투기, KF-21 전투기, KUH 기동헬기, LAH 소형무장헬기, 무인기 등 주요",
+      "evidence_chunk_id": "20250318001067:0051",
+      "rcept_no": "20250318001067",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "전투기, 훈련기, 무장헬기, 무인기 등 군수 방산 무기체계를 개발 및 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "000880",
+      "corp_name": "한화",
+      "label": "핵심",
+      "evidence": "한화시스템 방산부문은 전자광학, 레이다, 지휘통제ㆍ통신, 해양시스템, 항공전자 및위성분야에서 주요 연구개발을 진행하고 있으며, 각 분야별 핵심 기술을 확보하여 고품질 첨단복합 무기체계 연구개발을 수행하고 있습니다.",
+      "evidence_chunk_id": "20251218000270:0082",
+      "rcept_no": "20251218000270",
+      "section_path": "II. 사업의 내용 > 6. (제조서비스업)주요계약 및 연구개발활동",
+      "reason": "한화시스템 방산부문 및 한화에어로스페이스를 통해 무기체계 및 방산장비를 개발하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "272210",
+      "corp_name": "한화시스템",
+      "label": "핵심",
+      "evidence": "[방산부문] 전자광학, 레이다, 지휘통제ㆍ통신, 해양시스템, 항공전자 및 위성 분야에서 주요 연구개발을 진행하고 있으며, 각 분야별 핵심 기술을 확보하여 고품질 첨단복합 무기체계 연구개발을 수행하고 있습니다.",
+      "evidence_chunk_id": "20260513000644:0024",
+      "rcept_no": "20260513000644",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "방산부문을 통해 레이다, 무기체계 등 방위산업 관련 연구개발을 수행하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "012450",
+      "corp_name": "한화에어로스페이스",
+      "label": "핵심",
+      "evidence": "한화에어로스페이스㈜ 방산부문은 미래 핵심기술 내재화 및 국내외 시장 확대를 통해 Global Total Defense Player로의 성장을 목표로 모든 역량을 집중하고 있습니다.",
+      "evidence_chunk_id": "20260316001112:0035",
+      "rcept_no": "20260316001112",
+      "section_path": "II. 사업의 내용 > 6. 주요계약 및 연구개발활동",
+      "reason": "한화에어로스페이스 방산부문에서 기동무기체계, 화력무기체계 등 방산 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "042660",
+      "corp_name": "한화오션",
+      "label": "핵심",
+      "evidence": "당사는 뛰어난 기술력과 가격 경쟁력을 바탕으로 잠수함, 호위함 및 군수지원함 등 다양한 선종에서 세계 유수의 방산업체들과 경쟁하고 있습니다.",
+      "evidence_chunk_id": "20250314001630:0061",
+      "rcept_no": "20250314001630",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "특수선사업부를 통해 잠수함, 호위함 등 방산 함정 건조 및 수출 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "064350",
+      "corp_name": "현대로템",
+      "label": "핵심",
+      "evidence": "현대로템은 글로벌 종합기계 기업으로 1977년 창립되어 육ㆍ해ㆍ공을 아우르는 종합무기체계와 우주발사체, 미래무인체계 등을 수행하는 디펜스솔루션 사업, 국가 기간산업인 고속철 등 종합철도차량 제조, 철도시스템 솔루션, 철도 운영 및 유지보수 등을 영위하고 있는 레일솔루션 사업, 그리고 수소인프라솔루션, 산업용 로보틱스 및 프레스, 에코 제철설비 등을 제조ㆍ판매하는 에코플랜트 사업으로 구성되어 있습니다.",
+      "evidence_chunk_id": "20260319001275:0000",
+      "rcept_no": "20260319001275",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "현대로템은 종합무기체계를 수행하는 디펜스솔루션 사업을 영위하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "003490",
+      "corp_name": "대한항공",
+      "label": "관련",
+      "evidence": "군용기MROU | - | 2,999 | - | 15,391 | -",
+      "evidence_chunk_id": "20260318001125:0057",
+      "rcept_no": "20260318001125",
+      "section_path": "II. 사업의 내용 > 4. 매출 및 수주상황",
+      "reason": "군용기MROU 및 무인기 사업을 영위하고 있음이 수주상황을 통해 확인됩니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "042700",
+      "corp_name": "한미반도체",
+      "label": "관련",
+      "evidence": "특히 EMI 장비는 우주항공, 저궤도 위성통신, 방산용 드론 그리고 스마트 디바이스 시장에 필수 공정인 전자파 차폐 장비로 시장 수요와 성장에 따라 매출이 지속적으로 증가할 것으로 기대합니다.",
+      "evidence_chunk_id": "20260312001230:0004",
+      "rcept_no": "20260312001230",
+      "section_path": "II. 사업의 내용 > 1. 사업의 개요",
+      "reason": "방산용 드론 시장에 필수 공정인 EMI SHIELD 장비를 생산하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "011210",
+      "corp_name": "현대위아",
+      "label": "관련",
+      "evidence": "당사는 국내 유일의 대구경 화포 전문기업으로, 우수한 기술력을 기반으로 차량체계와 화포체계를 통합한 미래형 무기체계 전문기업으로 확장하고 있습니다.",
+      "evidence_chunk_id": "20260317000785:0071",
+      "rcept_no": "20260317000785",
+      "section_path": "II. 사업의 내용 > 7. 기타 참고사항",
+      "reason": "경량화 105mm 자주포 및 원격사격통제체계 등 무기체계를 개발 및 납품하고 있습니다.",
+      "evidence_verified": true
+    },
+    {
+      "stock_code": "078930",
+      "corp_name": "GS",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에 언급된 특장차 제조 및 항공기용 급유차 수출 등은 방위산업이나 군수 장비와 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "204320",
+      "corp_name": "HL만도",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 차량용 자율주행 및 ADAS 솔루션에 관한 내용으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "011200",
+      "corp_name": "HMM",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 선박 건조 계약 및 운송 수요에 관한 것으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "298050",
+      "corp_name": "HS효성첨단소재",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌에는 탄소섬유, 스판덱스, 폴리에스터 원사 등 섬유 및 화학 소재 사업만 명시되어 있으며 방위산업 관련 내용은 없습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "105560",
+      "corp_name": "KB금융",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 KB스타플랫폼 및 헤지펀드 등 금융 관련 사업만을 다루고 있어 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "034730",
+      "corp_name": "SK",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌 내용은 시스템 구축, 산업단지 조성, 재개발 등이며 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "285130",
+      "corp_name": "SK케미칼",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌에는 방위산업과 관련된 어떠한 사업 내용도 언급되어 있지 않습니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "000660",
+      "corp_name": "SK하이닉스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 반도체 제조 공정의 원재료에 관한 내용으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "011780",
+      "corp_name": "금호석유화학",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 유연탄 하역, 운송, 발전소 경정비 및 TDF 공급 등 물류 및 발전소 관련 서비스 사업만을 다루고 있어 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "068270",
+      "corp_name": "셀트리온",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌는 바이오 의약품 연구개발 활동에 관한 내용으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "069260",
+      "corp_name": "티케이지휴켐스",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "발췌문은 질산, DNT, MNB 등 화학 제품의 장기 공급 계약에 관한 내용으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "000080",
+      "corp_name": "하이트진로",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌 내용은 토지 전대차 계약 및 기계장치에 관한 것으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "015760",
+      "corp_name": "한국전력공사",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌는 발전소 건설 및 설계 용역 계약에 관한 내용으로 방위산업과 무관합니다.",
+      "evidence_verified": false
+    },
+    {
+      "stock_code": "082740",
+      "corp_name": "한화엔진",
+      "label": "무관",
+      "evidence": "",
+      "evidence_chunk_id": "",
+      "rcept_no": "",
+      "section_path": "",
+      "reason": "제시된 발췌에는 선박 엔진 및 친환경 촉매 시스템 관련 내용만 있으며 방위산업 관련 내용은 없습니다.",
+      "evidence_verified": false
+    }
+  ],
+  "approved_before": null,
+  "resume_command": {
+    "approve": true
+  },
+  "approved_after": true,
+  "next_after": [],
+  "seconds_total": 28.1
+}

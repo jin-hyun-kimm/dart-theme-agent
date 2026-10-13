@@ -8,7 +8,7 @@
   "answer": "",
   "correct": false,
   "fail_type": "no_number",
-  "error": "RefreshError: Reauthentication is needed. Please run `gcloud auth application-default login` to reauthenticate.",
-  "seconds": 0.6,
+  "error": "GraphRecursionError: Recursion limit of 17 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/pytho",
+  "seconds": 46.1,
   "trace": []
 }
